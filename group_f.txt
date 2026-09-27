@@ -1,0 +1,130 @@
+﻿192883	  Class descriptor  : 'Lcom/larus/im/internal/core/conversation/group/f;'
+192884	  Access flags      : 0x1011 (PUBLIC FINAL SYNTHETIC)
+192885	  Superclass        : 'Ljava/lang/Object;'
+192886	  Interfaces        -
+192887	    #0              : 'Lkotlin/jvm/functions/Function1;'
+192888	  Static fields     -
+192889	  Instance fields   -
+192890	    #0              : (in Lcom/larus/im/internal/core/conversation/group/f;)
+192891	      name          : 'a'
+192892	      type          : 'Lcom/larus/im/internal/core/conversation/group/d;'
+192893	      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+192894	    #1              : (in Lcom/larus/im/internal/core/conversation/group/f;)
+192895	      name          : 'b'
+192896	      type          : 'Ljava/lang/String;'
+192897	      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+192898	    #2              : (in Lcom/larus/im/internal/core/conversation/group/f;)
+192899	      name          : 'c'
+192900	      type          : 'Ljava/lang/String;'
+192901	      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+192902	    #3              : (in Lcom/larus/im/internal/core/conversation/group/f;)
+192903	      name          : 'd'
+192904	      type          : 'Ljava/util/Map;'
+192905	      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+192906	    #4              : (in Lcom/larus/im/internal/core/conversation/group/f;)
+192907	      name          : 'e'
+192908	      type          : 'Lkotlin/jvm/functions/Function0;'
+192909	      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+192910	    #5              : (in Lcom/larus/im/internal/core/conversation/group/f;)
+192911	      name          : 'f'
+192912	      type          : 'Ljava/util/List;'
+192913	      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+192914	  Direct methods    -
+192915	    #0              : (in Lcom/larus/im/internal/core/conversation/group/f;)
+192916	      name          : '<init>'
+192917	      type          : '(Lcom/larus/im/internal/core/conversation/group/d;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/internal/core/conversation/group/e;Ljava/util/List;)V'
+192918	      access        : 0x11001 (PUBLIC SYNTHETIC CONSTRUCTOR)
+192919	      code          -
+192920	      registers     : 7
+192921	      ins           : 7
+192922	      outs          : 1
+192923	      insns size    : 16 16-bit code units
+192924	481704:                                        |[481704] com.larus.im.internal.core.conversation.group.f.<init>:(Lcom/larus/im/internal/core/conversation/group/d;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/internal/core/conversation/group/e;Ljava/util/List;)V
+192925	481714: 7010 54ec 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@ec54
+192926	48171a: 5b01 d808                              |0003: iput-object v1, v0, Lcom/larus/im/internal/core/conversation/group/f;.a:Lcom/larus/im/internal/core/conversation/group/d; // field@08d8
+192927	48171e: 5b02 d908                              |0005: iput-object v2, v0, Lcom/larus/im/internal/core/conversation/group/f;.b:Ljava/lang/String; // field@08d9
+192928	481722: 5b03 da08                              |0007: iput-object v3, v0, Lcom/larus/im/internal/core/conversation/group/f;.c:Ljava/lang/String; // field@08da
+192929	481726: 5b04 db08                              |0009: iput-object v4, v0, Lcom/larus/im/internal/core/conversation/group/f;.d:Ljava/util/Map; // field@08db
+192930	48172a: 5b05 dc08                              |000b: iput-object v5, v0, Lcom/larus/im/internal/core/conversation/group/f;.e:Lkotlin/jvm/functions/Function0; // field@08dc
+192931	48172e: 5b06 dd08                              |000d: iput-object v6, v0, Lcom/larus/im/internal/core/conversation/group/f;.f:Ljava/util/List; // field@08dd
+192932	481732: 0e00                                   |000f: return-void
+192933	      catches       : (none)
+192934	      positions     :
+192935	      locals        :
+192936	
+192937	  Virtual methods   -
+192938	    #0              : (in Lcom/larus/im/internal/core/conversation/group/f;)
+192939	      name          : 'invoke'
+192940	      type          : '(Ljava/lang/Object;)Ljava/lang/Object;'
+192941	      access        : 0x0011 (PUBLIC FINAL)
+192942	      code          -
+192943	      registers     : 12
+192944	      ins           : 2
+192945	      outs          : 8
+192946	      insns size    : 36 16-bit code units
+192947	481734:                                        |[481734] com.larus.im.internal.core.conversation.group.f.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+192948	481744: 54a0 d808                              |0000: iget-object v0, v10, Lcom/larus/im/internal/core/conversation/group/f;.a:Lcom/larus/im/internal/core/conversation/group/d; // field@08d8
+192949	481748: 54a4 d908                              |0002: iget-object v4, v10, Lcom/larus/im/internal/core/conversation/group/f;.b:Ljava/lang/String; // field@08d9
+192950	48174c: 54a5 da08                              |0004: iget-object v5, v10, Lcom/larus/im/internal/core/conversation/group/f;.c:Ljava/lang/String; // field@08da
+192951	481750: 54a6 db08                              |0006: iget-object v6, v10, Lcom/larus/im/internal/core/conversation/group/f;.d:Ljava/util/Map; // field@08db
+192952	481754: 54a1 dc08                              |0008: iget-object v1, v10, Lcom/larus/im/internal/core/conversation/group/f;.e:Lkotlin/jvm/functions/Function0; // field@08dc
+192953	481758: 54a2 dd08                              |000a: iget-object v2, v10, Lcom/larus/im/internal/core/conversation/group/f;.f:Ljava/util/List; // field@08dd
+192954	48175c: 1f0b 2612                              |000c: check-cast v11, Lcom/larus/im/internal/jni/service/OmniMessageService; // type@1226
+192955	481760: 5503 d208                              |000e: iget-boolean v3, v0, Lcom/larus/im/internal/core/conversation/group/d;.d:Z // field@08d2
+192956	481764: 5407 cf08                              |0010: iget-object v7, v0, Lcom/larus/im/internal/core/conversation/group/d;.a:Ljava/lang/String; // field@08cf
+192957	481768: 5408 d408                              |0012: iget-object v8, v0, Lcom/larus/im/internal/core/conversation/group/d;.f:Lcom/larus/im/internal/jni/bean/OmniBreakReason; // field@08d4
+192958	48176c: 2209 0d09                              |0014: new-instance v9, Lcom/larus/im/internal/core/conversation/group/ConversationInterruptProcessorV3$interruptLocal$1$a; // type@090d
+192959	481770: 7040 a114 0921                         |0016: invoke-direct {v9, v0, v1, v2}, Lcom/larus/im/internal/core/conversation/group/ConversationInterruptProcessorV3$interruptLocal$1$a;.<init>:(Lcom/larus/im/internal/core/conversation/group/d;Lkotlin/jvm/functions/Function0;Ljava/util/List;)V // method@14a1
+192960	481776: 07b1                                   |0019: move-object v1, v11
+192961	481778: 0132                                   |001a: move v2, v3
+192962	48177a: 0773                                   |001b: move-object v3, v7
+192963	48177c: 0787                                   |001c: move-object v7, v8
+192964	48177e: 0798                                   |001d: move-object v8, v9
+192965	481780: 7408 2a5e 0100                         |001e: invoke-virtual/range {v1, v2, v3, v4, v5, v6, v7, v8}, Lcom/larus/im/internal/jni/service/OmniMessageService;.interruptMessage:(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/internal/jni/bean/OmniBreakReason;Lcom/larus/im/internal/jni/callback/OmniIMCallback;)V // method@5e2a
+192966	481786: 620b 7960                              |0021: sget-object v11, Lkotlin/Unit;.INSTANCE:Lkotlin/Unit; // field@6079
+192967	48178a: 110b                                   |0023: return-object v11
+192968	      catches       : (none)
+192969	      positions     :
+192970	        0x0000 line=16777216
+192971	        0x0001 line=16777217
+192972	        0x0002 line=16777218
+192973	        0x0003 line=16777219
+192974	        0x0004 line=16777220
+192975	        0x0005 line=16777221
+192976	        0x0006 line=16777222
+192977	        0x0007 line=16777223
+192978	        0x0008 line=16777224
+192979	        0x0009 line=16777225
+192980	        0x000a line=16777226
+192981	        0x000b line=16777227
+192982	        0x000c line=16777228
+192983	        0x000d line=16777229
+192984	        0x000e line=16777230
+192985	        0x000f line=16777231
+192986	        0x0010 line=16777232
+192987	        0x0011 line=16777233
+192988	        0x0012 line=16777234
+192989	        0x0013 line=16777235
+192990	        0x0014 line=16777236
+192991	        0x0015 line=16777237
+192992	        0x0016 line=16777238
+192993	        0x0017 line=16777239
+192994	        0x0018 line=16777240
+192995	        0x0019 line=16777241
+192996	        0x001a line=16777242
+192997	        0x001b line=16777243
+192998	        0x001c line=16777244
+192999	        0x001d line=16777245
+193000	        0x001e line=16777246
+193001	        0x001f line=16777247
+193002	        0x0020 line=16777248
+193003	        0x0021 line=16777249
+193004	        0x0022 line=16777250
+193005	        0x0023 line=16777251
+193006	      locals        :
+193007	        0x0000 - 0x0024 reg=10 this Lcom/larus/im/internal/core/conversation/group/f;
+193008	        0x0000 - 0x0024 reg=11 (null) Ljava/lang/Object;
+193009	
+193010	  source_file_idx   : 25959 (SourceFile)
+193011	
+193012	Class #621            -

@@ -1,0 +1,47 @@
+# ---- 第三方二进制（不入库）----
+# 豆包桌面端本体 ~1.8GB，属于第三方软件，仅供本地逆向使用
+Doubao/
+# 反汇编工具 jar 集合 ~410MB
+dev/jar/
+# 抓包/截图等调试产物 ~263MB
+capture/
+
+# ---- 构建产物 ----
+build/
+*/build/
+.gradle/
+.kotlin/
+__pycache__/
+*.pyc
+pc/dist/
+pc/installer/dist/
+pc/installer/build/
+*.spec.bak
+
+# ---- 调试截图 / 日志（逆向过程产物，非源码）----
+dev/*.png
+dev/*.txt
+android/vlog.txt
+
+# ---- 本机配置 / 密钥 ----
+local.properties
+.claude/
+.dsh-vision-router/
+.idea/
+*.iml
+
+# ---- 运行期产物 ----
+*.log
+*.db
+*.db-shm
+*.db-wal
+events.jsonl
+mlog.txt
+mcfg.db
+mconf.db
+daemon_test.log
+
+# ---- 大体积归档（发布在 Release，不入库）----
+*.zip
+*.apk
+*.aar.bak
