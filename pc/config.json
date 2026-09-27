@@ -1,0 +1,5 @@
+{
+  "port": 8787,
+  "cdp_port": 9222,
+  "log": "events.jsonl"
+}

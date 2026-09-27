@@ -1,0 +1,2031 @@
+﻿136823	  Class descriptor  : 'Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;'
+136824	  Access flags      : 0x0011 (PUBLIC FINAL)
+136825	  Superclass        : 'Ljava/lang/Object;'
+136826	  Interfaces        -
+136827	    #0              : 'Lcom/larus/im/service/r;'
+136828	  Static fields     -
+136829	    #0              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136830	      name          : 'Companion'
+136831	      type          : 'Lcom/larus/im/internal/core/conversation/ConversationServiceImpl$Companion;'
+136832	      access        : 0x0019 (PUBLIC STATIC FINAL)
+136833	      value         : null
+136834	    #1              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136835	      name          : 'TAG'
+136836	      type          : 'Ljava/lang/String;'
+136837	      access        : 0x001a (PRIVATE STATIC FINAL)
+136838	      value         : "ConversationServiceImpl"
+136839	    #2              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136840	      name          : 'instance$delegate'
+136841	      type          : 'Lkotlin/Lazy;'
+136842	      access        : 0x001a (PRIVATE STATIC FINAL)
+136843	  Instance fields   -
+136844	  Direct methods    -
+136845	    #0              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136846	      name          : '<clinit>'
+136847	      type          : '()V'
+136848	      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+136849	      code          -
+136850	      registers     : 2
+136851	      ins           : 0
+136852	      outs          : 2
+136853	      insns size    : 20 16-bit code units
+136854	46f960:                                        |[46f960] com.larus.im.internal.core.conversation.ConversationServiceImpl.<clinit>:()V
+136855	46f970: 2200 ac08                              |0000: new-instance v0, Lcom/larus/im/internal/core/conversation/ConversationServiceImpl$Companion; // type@08ac
+136856	46f974: 1201                                   |0002: const/4 v1, #int 0 // #0
+136857	46f976: 7020 d712 1000                         |0003: invoke-direct {v0, v1}, Lcom/larus/im/internal/core/conversation/ConversationServiceImpl$Companion;.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V // method@12d7
+136858	46f97c: 6900 4607                              |0006: sput-object v0, Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;.Companion:Lcom/larus/im/internal/core/conversation/ConversationServiceImpl$Companion; // field@0746
+136859	46f980: 2200 b608                              |0008: new-instance v0, Lcom/larus/im/internal/core/conversation/b; // type@08b6
+136860	46f984: 7010 4313 0000                         |000a: invoke-direct {v0}, Lcom/larus/im/internal/core/conversation/b;.<init>:()V // method@1343
+136861	46f98a: 7110 13ef 0000                         |000d: invoke-static {v0}, Lkotlin/LazyKt;.lazy:(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy; // method@ef13
+136862	46f990: 0c00                                   |0010: move-result-object v0
+136863	46f992: 6900 4807                              |0011: sput-object v0, Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;.instance$delegate:Lkotlin/Lazy; // field@0748
+136864	46f996: 0e00                                   |0013: return-void
+136865	      catches       : (none)
+136866	      positions     :
+136867	        0x0000 line=0
+136868	        0x0001 line=1
+136869	        0x0002 line=2
+136870	        0x0003 line=3
+136871	        0x0004 line=4
+136872	        0x0005 line=5
+136873	        0x0006 line=6
+136874	        0x0007 line=7
+136875	        0x0008 line=8
+136876	        0x0009 line=9
+136877	        0x000a line=10
+136878	        0x000b line=11
+136879	        0x000c line=12
+136880	        0x000d line=13
+136881	        0x000e line=14
+136882	        0x000f line=15
+136883	        0x0010 line=16
+136884	        0x0011 line=17
+136885	        0x0012 line=18
+136886	        0x0013 line=19
+136887	      locals        :
+136888	
+136889	    #1              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136890	      name          : '<init>'
+136891	      type          : '()V'
+136892	      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+136893	      code          -
+136894	      registers     : 1
+136895	      ins           : 1
+136896	      outs          : 1
+136897	      insns size    : 4 16-bit code units
+136898	46f998:                                        |[46f998] com.larus.im.internal.core.conversation.ConversationServiceImpl.<init>:()V
+136899	46f9a8: 7010 54ec 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@ec54
+136900	46f9ae: 0e00                                   |0003: return-void
+136901	      catches       : (none)
+136902	      positions     :
+136903	      locals        :
+136904	
+136905	    #2              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136906	      name          : 'a'
+136907	      type          : '()Lcom/larus/im/internal/legacy/NativeConversationServiceImpl;'
+136908	      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+136909	      code          -
+136910	      registers     : 1
+136911	      ins           : 0
+136912	      outs          : 0
+136913	      insns size    : 5 16-bit code units
+136914	46f9b0:                                        |[46f9b0] com.larus.im.internal.core.conversation.ConversationServiceImpl.a:()Lcom/larus/im/internal/legacy/NativeConversationServiceImpl;
+136915	46f9c0: 7100 f612 0000                         |0000: invoke-static {}, Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;.instance_delegate$lambda$2:()Lcom/larus/im/internal/legacy/NativeConversationServiceImpl; // method@12f6
+136916	46f9c6: 0c00                                   |0003: move-result-object v0
+136917	46f9c8: 1100                                   |0004: return-object v0
+136918	      catches       : (none)
+136919	      positions     :
+136920	      locals        :
+136921	
+136922	    #3              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136923	      name          : 'access$getInstance$delegate$cp'
+136924	      type          : '()Lkotlin/Lazy;'
+136925	      access        : 0x1019 (PUBLIC STATIC FINAL SYNTHETIC)
+136926	      code          -
+136927	      registers     : 1
+136928	      ins           : 0
+136929	      outs          : 0
+136930	      insns size    : 3 16-bit code units
+136931	46f9cc:                                        |[46f9cc] com.larus.im.internal.core.conversation.ConversationServiceImpl.access$getInstance$delegate$cp:()Lkotlin/Lazy;
+136932	46f9dc: 6200 4807                              |0000: sget-object v0, Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;.instance$delegate:Lkotlin/Lazy; // field@0748
+136933	46f9e0: 1100                                   |0002: return-object v0
+136934	      catches       : (none)
+136935	      positions     :
+136936	        0x0000 line=0
+136937	        0x0001 line=1
+136938	        0x0002 line=2
+136939	      locals        :
+136940	
+136941	    #4              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136942	      name          : 'instance_delegate$lambda$2'
+136943	      type          : '()Lcom/larus/im/internal/legacy/NativeConversationServiceImpl;'
+136944	      access        : 0x001a (PRIVATE STATIC FINAL)
+136945	      code          -
+136946	      registers     : 2
+136947	      ins           : 0
+136948	      outs          : 2
+136949	      insns size    : 11 16-bit code units
+136950	46fd54:                                        |[46fd54] com.larus.im.internal.core.conversation.ConversationServiceImpl.instance_delegate$lambda$2:()Lcom/larus/im/internal/legacy/NativeConversationServiceImpl;
+136951	46fd64: 2200 4b12                              |0000: new-instance v0, Lcom/larus/im/internal/legacy/NativeConversationServiceImpl; // type@124b
+136952	46fd68: 2201 ad08                              |0002: new-instance v1, Lcom/larus/im/internal/core/conversation/ConversationServiceImpl; // type@08ad
+136953	46fd6c: 7010 db12 0100                         |0004: invoke-direct {v1}, Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;.<init>:()V // method@12db
+136954	46fd72: 7020 355f 1000                         |0007: invoke-direct {v0, v1}, Lcom/larus/im/internal/legacy/NativeConversationServiceImpl;.<init>:(Lcom/larus/im/service/r;)V // method@5f35
+136955	46fd78: 1100                                   |000a: return-object v0
+136956	      catches       : (none)
+136957	      positions     :
+136958	        0x0000 line=0
+136959	        0x0001 line=1
+136960	        0x0002 line=2
+136961	        0x0003 line=3
+136962	        0x0004 line=4
+136963	        0x0005 line=5
+136964	        0x0006 line=6
+136965	        0x0007 line=7
+136966	        0x0008 line=8
+136967	        0x0009 line=9
+136968	        0x000a line=10
+136969	      locals        :
+136970	
+136971	  Virtual methods   -
+136972	    #0              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136973	      name          : 'batchDelUserConv'
+136974	      type          : '(Ljava/util/List;ILcom/larus/im/callback/IIMCallback;)V'
+136975	      access        : 0x0001 (PUBLIC)
+136976	      code          -
+136977	      registers     : 4
+136978	      ins           : 4
+136979	      outs          : 2
+136980	      insns size    : 6 16-bit code units
+136981	46f9e4:                                        |[46f9e4] com.larus.im.internal.core.conversation.ConversationServiceImpl.batchDelUserConv:(Ljava/util/List;ILcom/larus/im/callback/IIMCallback;)V
+136982	46f9f4: 1a02 2588                              |0000: const-string v2, "cvsIdList" // string@8825
+136983	46f9f8: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+136984	46f9fe: 0e00                                   |0005: return-void
+136985	      catches       : (none)
+136986	      positions     :
+136987	      locals        :
+136988	
+136989	    #1              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+136990	      name          : 'batchGetConversationByIds'
+136991	      type          : '(Ljava/util/List;Lcom/larus/im/callback/IIMCallback;)V'
+136992	      access        : 0x0001 (PUBLIC)
+136993	      code          -
+136994	      registers     : 3
+136995	      ins           : 3
+136996	      outs          : 2
+136997	      insns size    : 6 16-bit code units
+136998	46fa00:                                        |[46fa00] com.larus.im.internal.core.conversation.ConversationServiceImpl.batchGetConversationByIds:(Ljava/util/List;Lcom/larus/im/callback/IIMCallback;)V
+136999	46fa10: 1a02 2588                              |0000: const-string v2, "cvsIdList" // string@8825
+137000	46fa14: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137001	46fa1a: 0e00                                   |0005: return-void
+137002	      catches       : (none)
+137003	      positions     :
+137004	      locals        :
+137005	
+137006	    #2              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137007	      name          : 'batchGetParticipantsFromNet'
+137008	      type          : '(Leb9/a;Lcom/larus/im/callback/IIMCallback;)V'
+137009	      access        : 0x0001 (PUBLIC)
+137010	      code          -
+137011	      registers     : 4
+137012	      ins           : 3
+137013	      outs          : 3
+137014	      insns size    : 14 16-bit code units
+137015	46fa1c:                                        |[46fa1c] com.larus.im.internal.core.conversation.ConversationServiceImpl.batchGetParticipantsFromNet:(Leb9/a;Lcom/larus/im/callback/IIMCallback;)V
+137016	46fa2c: 1a00 41b0                              |0000: const-string v0, "request" // string@b041
+137017	46fa30: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137018	46fa36: 2200 3809                              |0005: new-instance v0, Lcom/larus/im/internal/core/conversation/participant/BatchGetParticipantProcessor; // type@0938
+137019	46fa3a: 7030 2d15 2003                         |0007: invoke-direct {v0, v2, v3}, Lcom/larus/im/internal/core/conversation/participant/BatchGetParticipantProcessor;.<init>:(Leb9/a;Lcom/larus/im/callback/IIMCallback;)V // method@152d
+137020	46fa40: 6e10 e111 0000                         |000a: invoke-virtual {v0}, Lcom/larus/im/internal/core/IMActionProcessor;.run:()V // method@11e1
+137021	46fa46: 0e00                                   |000d: return-void
+137022	      catches       : (none)
+137023	      positions     :
+137024	        0x0000 line=33554432
+137025	        0x0001 line=33554433
+137026	        0x0002 line=33554434
+137027	        0x0003 line=33554435
+137028	        0x0004 line=33554436
+137029	        0x0005 line=33554437
+137030	        0x0006 line=33554438
+137031	        0x0007 line=33554439
+137032	        0x0008 line=33554440
+137033	        0x0009 line=33554441
+137034	        0x000a line=33554442
+137035	        0x000b line=33554443
+137036	        0x000c line=33554444
+137037	        0x000d line=33554445
+137038	      locals        :
+137039	        0x0000 - 0x000e reg=1 this Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;
+137040	        0x0000 - 0x000e reg=2 (null) Leb9/a;
+137041	        0x0000 - 0x000e reg=3 (null) Lcom/larus/im/callback/IIMCallback;
+137042	
+137043	    #3              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137044	      name          : 'checkConversation'
+137045	      type          : '(Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V'
+137046	      access        : 0x0001 (PUBLIC)
+137047	      code          -
+137048	      registers     : 4
+137049	      ins           : 3
+137050	      outs          : 2
+137051	      insns size    : 11 16-bit code units
+137052	46fa48:                                        |[46fa48] com.larus.im.internal.core.conversation.ConversationServiceImpl.checkConversation:(Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V
+137053	46fa58: 1a00 c086                              |0000: const-string v0, "conversationIds" // string@86c0
+137054	46fa5c: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137055	46fa62: 1a02 7679                              |0005: const-string v2, "callback" // string@7976
+137056	46fa66: 7120 b2ef 2300                         |0007: invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137057	46fa6c: 0e00                                   |000a: return-void
+137058	      catches       : (none)
+137059	      positions     :
+137060	      locals        :
+137061	
+137062	    #4              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137063	      name          : 'clearMessageContext'
+137064	      type          : '(Ljava/lang/String;IILjava/lang/String;Lcom/larus/im/callback/IIMCallback;)V'
+137065	      access        : 0x0001 (PUBLIC)
+137066	      code          -
+137067	      registers     : 6
+137068	      ins           : 6
+137069	      outs          : 2
+137070	      insns size    : 11 16-bit code units
+137071	46fa70:                                        |[46fa70] com.larus.im.internal.core.conversation.ConversationServiceImpl.clearMessageContext:(Ljava/lang/String;IILjava/lang/String;Lcom/larus/im/callback/IIMCallback;)V
+137072	46fa80: 1a02 ba86                              |0000: const-string v2, "conversationId" // string@86ba
+137073	46fa84: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137074	46fa8a: 1a01 058f                              |0005: const-string v1, "from" // string@8f05
+137075	46fa8e: 7120 b2ef 1400                         |0007: invoke-static {v4, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137076	46fa94: 0e00                                   |000a: return-void
+137077	      catches       : (none)
+137078	      positions     :
+137079	      locals        :
+137080	
+137081	    #5              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137082	      name          : 'clearMessageHistory'
+137083	      type          : '(Ljava/lang/String;ILcom/larus/im/callback/IIMCallback;)V'
+137084	      access        : 0x0001 (PUBLIC)
+137085	      code          -
+137086	      registers     : 4
+137087	      ins           : 4
+137088	      outs          : 2
+137089	      insns size    : 6 16-bit code units
+137090	46fa98:                                        |[46fa98] com.larus.im.internal.core.conversation.ConversationServiceImpl.clearMessageHistory:(Ljava/lang/String;ILcom/larus/im/callback/IIMCallback;)V
+137091	46faa8: 1a02 ba86                              |0000: const-string v2, "conversationId" // string@86ba
+137092	46faac: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137093	46fab2: 0e00                                   |0005: return-void
+137094	      catches       : (none)
+137095	      positions     :
+137096	      locals        :
+137097	
+137098	    #6              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137099	      name          : 'createBotConversation'
+137100	      type          : '(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/callback/IIMCallback;)V'
+137101	      access        : 0x0001 (PUBLIC)
+137102	      code          -
+137103	      registers     : 11
+137104	      ins           : 11
+137105	      outs          : 2
+137106	      insns size    : 6 16-bit code units
+137107	46fab4:                                        |[46fab4] com.larus.im.internal.core.conversation.ConversationServiceImpl.createBotConversation:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/callback/IIMCallback;)V
+137108	46fac4: 1a02 7e78                              |0000: const-string v2, "botId" // string@787e
+137109	46fac8: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137110	46face: 0e00                                   |0005: return-void
+137111	      catches       : (none)
+137112	      positions     :
+137113	      locals        :
+137114	
+137115	    #7              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137116	      name          : 'createBotVIPDebugConversation'
+137117	      type          : '(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/callback/IIMCallback;)V'
+137118	      access        : 0x0001 (PUBLIC)
+137119	      code          -
+137120	      registers     : 7
+137121	      ins           : 7
+137122	      outs          : 2
+137123	      insns size    : 16 16-bit code units
+137124	46fad0:                                        |[46fad0] com.larus.im.internal.core.conversation.ConversationServiceImpl.createBotVIPDebugConversation:(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/callback/IIMCallback;)V
+137125	46fae0: 1a02 7e78                              |0000: const-string v2, "botId" // string@787e
+137126	46fae4: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137127	46faea: 1a01 65b8                              |0005: const-string v1, "sourceConversationId" // string@b865
+137128	46faee: 7120 b2ef 1300                         |0007: invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137129	46faf4: 1a01 c586                              |000a: const-string v1, "conversationName" // string@86c5
+137130	46faf8: 7120 b2ef 1400                         |000c: invoke-static {v4, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137131	46fafe: 0e00                                   |000f: return-void
+137132	      catches       : (none)
+137133	      positions     :
+137134	      locals        :
+137135	
+137136	    #8              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137137	      name          : 'createLocalBotConversation'
+137138	      type          : '(Lcom/larus/im/bean/bot/BotModel;ILjava/lang/Integer;Ljava/util/Map;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V'
+137139	      access        : 0x0001 (PUBLIC)
+137140	      code          -
+137141	      registers     : 7
+137142	      ins           : 7
+137143	      outs          : 2
+137144	      insns size    : 6 16-bit code units
+137145	46fb00:                                        |[46fb00] com.larus.im.internal.core.conversation.ConversationServiceImpl.createLocalBotConversation:(Lcom/larus/im/bean/bot/BotModel;ILjava/lang/Integer;Ljava/util/Map;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V
+137146	46fb10: 1a02 6578                              |0000: const-string v2, "bot" // string@7865
+137147	46fb14: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137148	46fb1a: 0e00                                   |0005: return-void
+137149	      catches       : (none)
+137150	      positions     :
+137151	      locals        :
+137152	
+137153	    #9              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137154	      name          : 'deleteConversation'
+137155	      type          : '(Ljava/lang/String;Lcom/larus/im/bean/conversation/ConversationDeleteMode;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V'
+137156	      access        : 0x0001 (PUBLIC)
+137157	      code          -
+137158	      registers     : 5
+137159	      ins           : 5
+137160	      outs          : 2
+137161	      insns size    : 11 16-bit code units
+137162	46fb1c:                                        |[46fb1c] com.larus.im.internal.core.conversation.ConversationServiceImpl.deleteConversation:(Ljava/lang/String;Lcom/larus/im/bean/conversation/ConversationDeleteMode;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V
+137163	46fb2c: 1a03 ba86                              |0000: const-string v3, "conversationId" // string@86ba
+137164	46fb30: 7120 b2ef 3100                         |0002: invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137165	46fb36: 1a01 db88                              |0005: const-string v1, "deleteMode" // string@88db
+137166	46fb3a: 7120 b2ef 1200                         |0007: invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137167	46fb40: 0e00                                   |000a: return-void
+137168	      catches       : (none)
+137169	      positions     :
+137170	      locals        :
+137171	
+137172	    #10              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137173	      name          : 'enterConversation'
+137174	      type          : '(Ljava/lang/String;Ljava/lang/Integer;Lcom/larus/im/callback/IIMCallback;)V'
+137175	      access        : 0x0001 (PUBLIC)
+137176	      code          -
+137177	      registers     : 4
+137178	      ins           : 4
+137179	      outs          : 0
+137180	      insns size    : 1 16-bit code units
+137181	46fb44:                                        |[46fb44] com.larus.im.internal.core.conversation.ConversationServiceImpl.enterConversation:(Ljava/lang/String;Ljava/lang/Integer;Lcom/larus/im/callback/IIMCallback;)V
+137182	46fb54: 0e00                                   |0000: return-void
+137183	      catches       : (none)
+137184	      positions     :
+137185	      locals        :
+137186	
+137187	    #11              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137188	      name          : 'exitConversation'
+137189	      type          : '(Ljava/lang/String;Ljava/lang/Integer;Lcom/larus/im/callback/IIMCallback;)V'
+137190	      access        : 0x0001 (PUBLIC)
+137191	      code          -
+137192	      registers     : 4
+137193	      ins           : 4
+137194	      outs          : 0
+137195	      insns size    : 1 16-bit code units
+137196	46fb58:                                        |[46fb58] com.larus.im.internal.core.conversation.ConversationServiceImpl.exitConversation:(Ljava/lang/String;Ljava/lang/Integer;Lcom/larus/im/callback/IIMCallback;)V
+137197	46fb68: 0e00                                   |0000: return-void
+137198	      catches       : (none)
+137199	      positions     :
+137200	      locals        :
+137201	
+137202	    #12              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137203	      name          : 'forkConversation'
+137204	      type          : '(Lcom/larus/im/bean/conversation/ForkConversationRequest;Lcom/larus/im/callback/IIMCallback;)V'
+137205	      access        : 0x0001 (PUBLIC)
+137206	      code          -
+137207	      registers     : 4
+137208	      ins           : 3
+137209	      outs          : 3
+137210	      insns size    : 15 16-bit code units
+137211	46fb6c:                                        |[46fb6c] com.larus.im.internal.core.conversation.ConversationServiceImpl.forkConversation:(Lcom/larus/im/bean/conversation/ForkConversationRequest;Lcom/larus/im/callback/IIMCallback;)V
+137212	46fb7c: 1a03 41b0                              |0000: const-string v3, "request" // string@b041
+137213	46fb80: 7120 b2ef 3200                         |0002: invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137214	46fb86: 6202 2311                              |0005: sget-object v2, Lcom/larus/im/internal/delegate/a;.b:Lcom/larus/im/internal/delegate/a; // field@1123
+137215	46fb8a: 1a03 5c1e                              |0007: const-string v3, "ConversationServiceImpl" // string@1e5c
+137216	46fb8e: 1a00 dd8e                              |0009: const-string v0, "forkConversation error, need omni sdk" // string@8edd
+137217	46fb92: 6e30 2a22 3200                         |000b: invoke-virtual {v2, v3, v0}, Lcom/larus/im/internal/delegate/a;.e:(Ljava/lang/String;Ljava/lang/String;)V // method@222a
+137218	46fb98: 0e00                                   |000e: return-void
+137219	      catches       : (none)
+137220	      positions     :
+137221	        0x0000 line=33554432
+137222	        0x0001 line=33554433
+137223	        0x0002 line=33554434
+137224	        0x0003 line=33554435
+137225	        0x0004 line=33554436
+137226	        0x0005 line=33554437
+137227	        0x0006 line=33554438
+137228	        0x0007 line=33554439
+137229	        0x0008 line=33554440
+137230	        0x0009 line=33554441
+137231	        0x000a line=33554442
+137232	        0x000b line=33554443
+137233	        0x000c line=33554444
+137234	        0x000d line=33554445
+137235	        0x000e line=33554446
+137236	      locals        :
+137237	        0x0000 - 0x000f reg=1 this Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;
+137238	        0x0000 - 0x000f reg=2 (null) Lcom/larus/im/bean/conversation/ForkConversationRequest;
+137239	        0x0000 - 0x000f reg=3 (null) Lcom/larus/im/callback/IIMCallback;
+137240	
+137241	    #13              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137242	      name          : 'getAllParticipants'
+137243	      type          : '(Ljava/lang/String;IIZZLcom/larus/im/callback/IIMCallback;)V'
+137244	      access        : 0x0001 (PUBLIC)
+137245	      code          -
+137246	      registers     : 14
+137247	      ins           : 7
+137248	      outs          : 7
+137249	      insns size    : 27 16-bit code units
+137250	46fb9c:                                        |[46fb9c] com.larus.im.internal.core.conversation.ConversationServiceImpl.getAllParticipants:(Ljava/lang/String;IIZZLcom/larus/im/callback/IIMCallback;)V
+137251	46fbac: 1a0b ba86                              |0000: const-string v11, "conversationId" // string@86ba
+137252	46fbb0: 7120 b2ef b800                         |0002: invoke-static {v8, v11}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137253	46fbb6: 220b b817                              |0005: new-instance v11, Lcom/larus/im/internal/protocol/bean/GetConversationParticipantUplinkBody; // type@17b8
+137254	46fbba: 1204                                   |0007: const/4 v4, #int 0 // #0
+137255	46fbbc: 1305 0800                              |0008: const/16 v5, #int 8 // #8
+137256	46fbc0: 1206                                   |000a: const/4 v6, #int 0 // #0
+137257	46fbc2: 07b0                                   |000b: move-object v0, v11
+137258	46fbc4: 0781                                   |000c: move-object v1, v8
+137259	46fbc6: 0192                                   |000d: move v2, v9
+137260	46fbc8: 01a3                                   |000e: move v3, v10
+137261	46fbca: 7607 c7a8 0000                         |000f: invoke-direct/range {v0, v1, v2, v3, v4, v5, v6}, Lcom/larus/im/internal/protocol/bean/GetConversationParticipantUplinkBody;.<init>:(Ljava/lang/String;IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@a8c7
+137262	46fbd0: 2208 3d09                              |0012: new-instance v8, Lcom/larus/im/internal/core/conversation/participant/GetConversationParticipantProcessor; // type@093d
+137263	46fbd4: 7040 4315 c8db                         |0014: invoke-direct {v8, v12, v11, v13}, Lcom/larus/im/internal/core/conversation/participant/GetConversationParticipantProcessor;.<init>:(ZLcom/larus/im/internal/protocol/bean/GetConversationParticipantUplinkBody;Lcom/larus/im/callback/IIMCallback;)V // method@1543
+137264	46fbda: 6e10 e111 0800                         |0017: invoke-virtual {v8}, Lcom/larus/im/internal/core/IMActionProcessor;.run:()V // method@11e1
+137265	46fbe0: 0e00                                   |001a: return-void
+137266	      catches       : (none)
+137267	      positions     :
+137268	        0x0000 line=100663296
+137269	        0x0001 line=100663297
+137270	        0x0002 line=100663298
+137271	        0x0003 line=100663299
+137272	        0x0004 line=100663300
+137273	        0x0005 line=100663301
+137274	        0x0006 line=100663302
+137275	        0x0007 line=100663303
+137276	        0x0008 line=100663304
+137277	        0x0009 line=100663305
+137278	        0x000a line=100663306
+137279	        0x000b line=100663307
+137280	        0x000c line=100663308
+137281	        0x000d line=100663309
+137282	        0x000e line=100663310
+137283	        0x000f line=100663311
+137284	        0x0010 line=100663312
+137285	        0x0011 line=100663313
+137286	        0x0012 line=100663314
+137287	        0x0013 line=100663315
+137288	        0x0014 line=100663316
+137289	        0x0015 line=100663317
+137290	        0x0016 line=100663318
+137291	        0x0017 line=100663319
+137292	        0x0018 line=100663320
+137293	        0x0019 line=100663321
+137294	        0x001a line=100663322
+137295	      locals        :
+137296	        0x0000 - 0x001b reg=7 this Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;
+137297	        0x0000 - 0x001b reg=8 (null) Ljava/lang/String;
+137298	        0x0000 - 0x001b reg=9 (null) I
+137299	        0x0000 - 0x001b reg=10 (null) I
+137300	        0x0000 - 0x001b reg=11 (null) Z
+137301	        0x0000 - 0x001b reg=12 (null) Z
+137302	        0x0000 - 0x001b reg=13 (null) Lcom/larus/im/callback/IIMCallback;
+137303	
+137304	    #14              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137305	      name          : 'getAndSyncRemoteConversation'
+137306	      type          : '(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;Ljava/util/Map;)V'
+137307	      access        : 0x0001 (PUBLIC)
+137308	      code          -
+137309	      registers     : 5
+137310	      ins           : 5
+137311	      outs          : 2
+137312	      insns size    : 6 16-bit code units
+137313	46fbe4:                                        |[46fbe4] com.larus.im.internal.core.conversation.ConversationServiceImpl.getAndSyncRemoteConversation:(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;Ljava/util/Map;)V
+137314	46fbf4: 1a02 ba86                              |0000: const-string v2, "conversationId" // string@86ba
+137315	46fbf8: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137316	46fbfe: 0e00                                   |0005: return-void
+137317	      catches       : (none)
+137318	      positions     :
+137319	      locals        :
+137320	
+137321	    #15              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137322	      name          : 'getBotConversation'
+137323	      type          : '(Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V'
+137324	      access        : 0x0001 (PUBLIC)
+137325	      code          -
+137326	      registers     : 4
+137327	      ins           : 3
+137328	      outs          : 2
+137329	      insns size    : 11 16-bit code units
+137330	46fc00:                                        |[46fc00] com.larus.im.internal.core.conversation.ConversationServiceImpl.getBotConversation:(Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V
+137331	46fc10: 1a00 7e78                              |0000: const-string v0, "botId" // string@787e
+137332	46fc14: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137333	46fc1a: 1a02 7679                              |0005: const-string v2, "callback" // string@7976
+137334	46fc1e: 7120 b2ef 2300                         |0007: invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137335	46fc24: 0e00                                   |000a: return-void
+137336	      catches       : (none)
+137337	      positions     :
+137338	      locals        :
+137339	
+137340	    #16              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137341	      name          : 'getConversation'
+137342	      type          : '(Ljava/lang/String;ZLcom/larus/im/callback/IIMCallback;Ljava/lang/String;Ljava/util/Map;)V'
+137343	      access        : 0x0001 (PUBLIC)
+137344	      code          -
+137345	      registers     : 6
+137346	      ins           : 6
+137347	      outs          : 2
+137348	      insns size    : 6 16-bit code units
+137349	46fc28:                                        |[46fc28] com.larus.im.internal.core.conversation.ConversationServiceImpl.getConversation:(Ljava/lang/String;ZLcom/larus/im/callback/IIMCallback;Ljava/lang/String;Ljava/util/Map;)V
+137350	46fc38: 1a02 ba86                              |0000: const-string v2, "conversationId" // string@86ba
+137351	46fc3c: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137352	46fc42: 0e00                                   |0005: return-void
+137353	      catches       : (none)
+137354	      positions     :
+137355	      locals        :
+137356	
+137357	    #17              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137358	      name          : 'getConversationList'
+137359	      type          : '(Leb9/o;Lcom/larus/im/callback/IIMCallback;)V'
+137360	      access        : 0x0001 (PUBLIC)
+137361	      code          -
+137362	      registers     : 3
+137363	      ins           : 3
+137364	      outs          : 2
+137365	      insns size    : 6 16-bit code units
+137366	46fc44:                                        |[46fc44] com.larus.im.internal.core.conversation.ConversationServiceImpl.getConversationList:(Leb9/o;Lcom/larus/im/callback/IIMCallback;)V
+137367	46fc54: 1a02 41b0                              |0000: const-string v2, "request" // string@b041
+137368	46fc58: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137369	46fc5e: 0e00                                   |0005: return-void
+137370	      catches       : (none)
+137371	      positions     :
+137372	      locals        :
+137373	
+137374	    #18              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137375	      name          : 'getConversationListV2'
+137376	      type          : '(Leb9/n;Lcom/larus/im/callback/IIMCallback;)V'
+137377	      access        : 0x0001 (PUBLIC)
+137378	      code          -
+137379	      registers     : 4
+137380	      ins           : 3
+137381	      outs          : 3
+137382	      insns size    : 14 16-bit code units
+137383	46fc60:                                        |[46fc60] com.larus.im.internal.core.conversation.ConversationServiceImpl.getConversationListV2:(Leb9/n;Lcom/larus/im/callback/IIMCallback;)V
+137384	46fc70: 1a00 41b0                              |0000: const-string v0, "request" // string@b041
+137385	46fc74: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137386	46fc7a: 2200 2a09                              |0005: new-instance v0, Lcom/larus/im/internal/core/conversation/group/LoadLocalConversationsProcessor; // type@092a
+137387	46fc7e: 7030 0315 2003                         |0007: invoke-direct {v0, v2, v3}, Lcom/larus/im/internal/core/conversation/group/LoadLocalConversationsProcessor;.<init>:(Leb9/n;Lcom/larus/im/callback/IIMCallback;)V // method@1503
+137388	46fc84: 6e10 e111 0000                         |000a: invoke-virtual {v0}, Lcom/larus/im/internal/core/IMActionProcessor;.run:()V // method@11e1
+137389	46fc8a: 0e00                                   |000d: return-void
+137390	      catches       : (none)
+137391	      positions     :
+137392	        0x0000 line=33554432
+137393	        0x0001 line=33554433
+137394	        0x0002 line=33554434
+137395	        0x0003 line=33554435
+137396	        0x0004 line=33554436
+137397	        0x0005 line=33554437
+137398	        0x0006 line=33554438
+137399	        0x0007 line=33554439
+137400	        0x0008 line=33554440
+137401	        0x0009 line=33554441
+137402	        0x000a line=33554442
+137403	        0x000b line=33554443
+137404	        0x000c line=33554444
+137405	        0x000d line=33554445
+137406	      locals        :
+137407	        0x0000 - 0x000e reg=1 this Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;
+137408	        0x0000 - 0x000e reg=2 (null) Leb9/n;
+137409	        0x0000 - 0x000e reg=3 (null) Lcom/larus/im/callback/IIMCallback;
+137410	
+137411	    #19              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137412	      name          : 'getMainConversation'
+137413	      type          : '(Lcom/larus/im/callback/IIMCallback;)V'
+137414	      access        : 0x0001 (PUBLIC)
+137415	      code          -
+137416	      registers     : 3
+137417	      ins           : 2
+137418	      outs          : 2
+137419	      insns size    : 6 16-bit code units
+137420	46fc8c:                                        |[46fc8c] com.larus.im.internal.core.conversation.ConversationServiceImpl.getMainConversation:(Lcom/larus/im/callback/IIMCallback;)V
+137421	46fc9c: 1a00 7679                              |0000: const-string v0, "callback" // string@7976
+137422	46fca0: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137423	46fca6: 0e00                                   |0005: return-void
+137424	      catches       : (none)
+137425	      positions     :
+137426	      locals        :
+137427	
+137428	    #20              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137429	      name          : 'getNonPinConversationList'
+137430	      type          : '(Leb9/g;Lcom/larus/im/callback/IIMCallback;)V'
+137431	      access        : 0x0001 (PUBLIC)
+137432	      code          -
+137433	      registers     : 4
+137434	      ins           : 3
+137435	      outs          : 2
+137436	      insns size    : 11 16-bit code units
+137437	46fca8:                                        |[46fca8] com.larus.im.internal.core.conversation.ConversationServiceImpl.getNonPinConversationList:(Leb9/g;Lcom/larus/im/callback/IIMCallback;)V
+137438	46fcb8: 1a00 41b0                              |0000: const-string v0, "request" // string@b041
+137439	46fcbc: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137440	46fcc2: 1a02 7679                              |0005: const-string v2, "callback" // string@7976
+137441	46fcc6: 7120 b2ef 2300                         |0007: invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137442	46fccc: 0e00                                   |000a: return-void
+137443	      catches       : (none)
+137444	      positions     :
+137445	      locals        :
+137446	
+137447	    #21              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137448	      name          : 'getParticipant'
+137449	      type          : '(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V'
+137450	      access        : 0x0001 (PUBLIC)
+137451	      code          -
+137452	      registers     : 5
+137453	      ins           : 4
+137454	      outs          : 4
+137455	      insns size    : 24 16-bit code units
+137456	46fcd0:                                        |[46fcd0] com.larus.im.internal.core.conversation.ConversationServiceImpl.getParticipant:(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V
+137457	46fce0: 1a00 ba86                              |0000: const-string v0, "conversationId" // string@86ba
+137458	46fce4: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137459	46fcea: 1a00 6fab                              |0005: const-string v0, "participantId" // string@ab6f
+137460	46fcee: 7120 b2ef 0300                         |0007: invoke-static {v3, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137461	46fcf4: 1a00 7679                              |000a: const-string v0, "callback" // string@7976
+137462	46fcf8: 7120 b2ef 0400                         |000c: invoke-static {v4, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137463	46fcfe: 2200 4009                              |000f: new-instance v0, Lcom/larus/im/internal/core/conversation/participant/GetParticipantProcessor; // type@0940
+137464	46fd02: 7040 5115 2043                         |0011: invoke-direct {v0, v2, v3, v4}, Lcom/larus/im/internal/core/conversation/participant/GetParticipantProcessor;.<init>:(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V // method@1551
+137465	46fd08: 6e10 e111 0000                         |0014: invoke-virtual {v0}, Lcom/larus/im/internal/core/IMActionProcessor;.run:()V // method@11e1
+137466	46fd0e: 0e00                                   |0017: return-void
+137467	      catches       : (none)
+137468	      positions     :
+137469	        0x0000 line=50331648
+137470	        0x0001 line=50331649
+137471	        0x0002 line=50331650
+137472	        0x0003 line=50331651
+137473	        0x0004 line=50331652
+137474	        0x0005 line=50331653
+137475	        0x0006 line=50331654
+137476	        0x0007 line=50331655
+137477	        0x0008 line=50331656
+137478	        0x0009 line=50331657
+137479	        0x000a line=50331658
+137480	        0x000b line=50331659
+137481	        0x000c line=50331660
+137482	        0x000d line=50331661
+137483	        0x000e line=50331662
+137484	        0x000f line=50331663
+137485	        0x0010 line=50331664
+137486	        0x0011 line=50331665
+137487	        0x0012 line=50331666
+137488	        0x0013 line=50331667
+137489	        0x0014 line=50331668
+137490	        0x0015 line=50331669
+137491	        0x0016 line=50331670
+137492	        0x0017 line=50331671
+137493	      locals        :
+137494	        0x0000 - 0x0018 reg=1 this Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;
+137495	        0x0000 - 0x0018 reg=2 (null) Ljava/lang/String;
+137496	        0x0000 - 0x0018 reg=3 (null) Ljava/lang/String;
+137497	        0x0000 - 0x0018 reg=4 (null) Lcom/larus/im/callback/IIMCallback;
+137498	
+137499	    #22              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137500	      name          : 'getPinConversationList'
+137501	      type          : '(Leb9/g;Lcom/larus/im/callback/IIMCallback;)V'
+137502	      access        : 0x0001 (PUBLIC)
+137503	      code          -
+137504	      registers     : 4
+137505	      ins           : 3
+137506	      outs          : 2
+137507	      insns size    : 11 16-bit code units
+137508	46fd10:                                        |[46fd10] com.larus.im.internal.core.conversation.ConversationServiceImpl.getPinConversationList:(Leb9/g;Lcom/larus/im/callback/IIMCallback;)V
+137509	46fd20: 1a00 41b0                              |0000: const-string v0, "request" // string@b041
+137510	46fd24: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137511	46fd2a: 1a02 7679                              |0005: const-string v2, "callback" // string@7976
+137512	46fd2e: 7120 b2ef 2300                         |0007: invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137513	46fd34: 0e00                                   |000a: return-void
+137514	      catches       : (none)
+137515	      positions     :
+137516	      locals        :
+137517	
+137518	    #23              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137519	      name          : 'getSubConversationList'
+137520	      type          : '(Lcom/larus/im/callback/IIMCallback;)V'
+137521	      access        : 0x0001 (PUBLIC)
+137522	      code          -
+137523	      registers     : 3
+137524	      ins           : 2
+137525	      outs          : 2
+137526	      insns size    : 6 16-bit code units
+137527	46fd38:                                        |[46fd38] com.larus.im.internal.core.conversation.ConversationServiceImpl.getSubConversationList:(Lcom/larus/im/callback/IIMCallback;)V
+137528	46fd48: 1a00 7679                              |0000: const-string v0, "callback" // string@7976
+137529	46fd4c: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137530	46fd52: 0e00                                   |0005: return-void
+137531	      catches       : (none)
+137532	      positions     :
+137533	      locals        :
+137534	
+137535	    #24              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137536	      name          : 'markRead'
+137537	      type          : '(Ljava/lang/String;Ljava/lang/Long;Lcom/larus/im/callback/IIMCallback;)V'
+137538	      access        : 0x0001 (PUBLIC)
+137539	      code          -
+137540	      registers     : 4
+137541	      ins           : 4
+137542	      outs          : 2
+137543	      insns size    : 6 16-bit code units
+137544	46fd7c:                                        |[46fd7c] com.larus.im.internal.core.conversation.ConversationServiceImpl.markRead:(Ljava/lang/String;Ljava/lang/Long;Lcom/larus/im/callback/IIMCallback;)V
+137545	46fd8c: 1a02 ba86                              |0000: const-string v2, "conversationId" // string@86ba
+137546	46fd90: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137547	46fd96: 0e00                                   |0005: return-void
+137548	      catches       : (none)
+137549	      positions     :
+137550	      locals        :
+137551	
+137552	    #25              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137553	      name          : 'modifyConversation'
+137554	      type          : '(Lcom/larus/im/internal/jni/bean/OmniModifyConversationRequest;Lcom/larus/im/callback/IIMCallback;)V'
+137555	      access        : 0x0001 (PUBLIC)
+137556	      code          -
+137557	      registers     : 3
+137558	      ins           : 3
+137559	      outs          : 2
+137560	      insns size    : 6 16-bit code units
+137561	46fd98:                                        |[46fd98] com.larus.im.internal.core.conversation.ConversationServiceImpl.modifyConversation:(Lcom/larus/im/internal/jni/bean/OmniModifyConversationRequest;Lcom/larus/im/callback/IIMCallback;)V
+137562	46fda8: 1a02 41b0                              |0000: const-string v2, "request" // string@b041
+137563	46fdac: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137564	46fdb2: 0e00                                   |0005: return-void
+137565	      catches       : (none)
+137566	      positions     :
+137567	      locals        :
+137568	
+137569	    #26              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137570	      name          : 'operateConversation'
+137571	      type          : '(Ljava/lang/String;IILcom/larus/im/callback/IIMCallback;)V'
+137572	      access        : 0x0001 (PUBLIC)
+137573	      code          -
+137574	      registers     : 5
+137575	      ins           : 5
+137576	      outs          : 2
+137577	      insns size    : 6 16-bit code units
+137578	46fdb4:                                        |[46fdb4] com.larus.im.internal.core.conversation.ConversationServiceImpl.operateConversation:(Ljava/lang/String;IILcom/larus/im/callback/IIMCallback;)V
+137579	46fdc4: 1a02 ba86                              |0000: const-string v2, "conversationId" // string@86ba
+137580	46fdc8: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137581	46fdce: 0e00                                   |0005: return-void
+137582	      catches       : (none)
+137583	      positions     :
+137584	      locals        :
+137585	
+137586	    #27              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137587	      name          : 'pinConversation'
+137588	      type          : '(Ljava/lang/String;IIILcom/larus/im/callback/IIMCallback;)V'
+137589	      access        : 0x0001 (PUBLIC)
+137590	      code          -
+137591	      registers     : 6
+137592	      ins           : 6
+137593	      outs          : 2
+137594	      insns size    : 6 16-bit code units
+137595	46fdd0:                                        |[46fdd0] com.larus.im.internal.core.conversation.ConversationServiceImpl.pinConversation:(Ljava/lang/String;IIILcom/larus/im/callback/IIMCallback;)V
+137596	46fde0: 1a02 ba86                              |0000: const-string v2, "conversationId" // string@86ba
+137597	46fde4: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137598	46fdea: 0e00                                   |0005: return-void
+137599	      catches       : (none)
+137600	      positions     :
+137601	      locals        :
+137602	
+137603	    #28              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137604	      name          : 'pullRemoteConversation'
+137605	      type          : '(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V'
+137606	      access        : 0x0001 (PUBLIC)
+137607	      code          -
+137608	      registers     : 4
+137609	      ins           : 4
+137610	      outs          : 2
+137611	      insns size    : 11 16-bit code units
+137612	46fdec:                                        |[46fdec] com.larus.im.internal.core.conversation.ConversationServiceImpl.pullRemoteConversation:(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+137613	46fdfc: 1a03 ba86                              |0000: const-string v3, "conversationId" // string@86ba
+137614	46fe00: 7120 b2ef 3100                         |0002: invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137615	46fe06: 1a01 058f                              |0005: const-string v1, "from" // string@8f05
+137616	46fe0a: 7120 b2ef 1200                         |0007: invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137617	46fe10: 0e00                                   |000a: return-void
+137618	      catches       : (none)
+137619	      positions     :
+137620	      locals        :
+137621	
+137622	    #29              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137623	      name          : 'replaceLocalConversation'
+137624	      type          : '(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/bean/conversation/MessageReplaceStrategy;Lcom/larus/im/callback/IIMCallback;)V'
+137625	      access        : 0x0001 (PUBLIC)
+137626	      code          -
+137627	      registers     : 6
+137628	      ins           : 5
+137629	      outs          : 2
+137630	      insns size    : 21 16-bit code units
+137631	46fe14:                                        |[46fe14] com.larus.im.internal.core.conversation.ConversationServiceImpl.replaceLocalConversation:(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/bean/conversation/MessageReplaceStrategy;Lcom/larus/im/callback/IIMCallback;)V
+137632	46fe24: 1a00 95a3                              |0000: const-string v0, "localConversationId" // string@a395
+137633	46fe28: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137634	46fe2e: 1a02 ba86                              |0005: const-string v2, "conversationId" // string@86ba
+137635	46fe32: 7120 b2ef 2300                         |0007: invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137636	46fe38: 1a02 a9af                              |000a: const-string v2, "replaceStrategy" // string@afa9
+137637	46fe3c: 7120 b2ef 2400                         |000c: invoke-static {v4, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137638	46fe42: 1a02 7679                              |000f: const-string v2, "callback" // string@7976
+137639	46fe46: 7120 b2ef 2500                         |0011: invoke-static {v5, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137640	46fe4c: 0e00                                   |0014: return-void
+137641	      catches       : (none)
+137642	      positions     :
+137643	      locals        :
+137644	
+137645	    #30              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137646	      name          : 'searchConversationByFts'
+137647	      type          : '(Lcom/larus/im/internal/core/conversation/FtsSearchParam;Lcom/larus/im/callback/IIMCallback;)V'
+137648	      access        : 0x0001 (PUBLIC)
+137649	      code          -
+137650	      registers     : 4
+137651	      ins           : 3
+137652	      outs          : 3
+137653	      insns size    : 14 16-bit code units
+137654	46fe50:                                        |[46fe50] com.larus.im.internal.core.conversation.ConversationServiceImpl.searchConversationByFts:(Lcom/larus/im/internal/core/conversation/FtsSearchParam;Lcom/larus/im/callback/IIMCallback;)V
+137655	46fe60: 1a00 34ab                              |0000: const-string v0, "param" // string@ab34
+137656	46fe64: 7120 b2ef 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137657	46fe6a: 2200 b208                              |0005: new-instance v0, Lcom/larus/im/internal/core/conversation/FtsSearchConversationProcessor; // type@08b2
+137658	46fe6e: 7030 1313 2003                         |0007: invoke-direct {v0, v2, v3}, Lcom/larus/im/internal/core/conversation/FtsSearchConversationProcessor;.<init>:(Lcom/larus/im/internal/core/conversation/FtsSearchParam;Lcom/larus/im/callback/IIMCallback;)V // method@1313
+137659	46fe74: 6e10 e111 0000                         |000a: invoke-virtual {v0}, Lcom/larus/im/internal/core/IMActionProcessor;.run:()V // method@11e1
+137660	46fe7a: 0e00                                   |000d: return-void
+137661	      catches       : (none)
+137662	      positions     :
+137663	        0x0000 line=33554432
+137664	        0x0001 line=33554433
+137665	        0x0002 line=33554434
+137666	        0x0003 line=33554435
+137667	        0x0004 line=33554436
+137668	        0x0005 line=33554437
+137669	        0x0006 line=33554438
+137670	        0x0007 line=33554439
+137671	        0x0008 line=33554440
+137672	        0x0009 line=33554441
+137673	        0x000a line=33554442
+137674	        0x000b line=33554443
+137675	        0x000c line=33554444
+137676	        0x000d line=33554445
+137677	      locals        :
+137678	        0x0000 - 0x000e reg=1 this Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;
+137679	        0x0000 - 0x000e reg=2 (null) Lcom/larus/im/internal/core/conversation/FtsSearchParam;
+137680	        0x0000 - 0x000e reg=3 (null) Lcom/larus/im/callback/IIMCallback;
+137681	
+137682	    #31              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137683	      name          : 'selectConversationList'
+137684	      type          : '(Lcom/larus/im/internal/jni/bean/OmniSelectConversationListRequest;Lcom/larus/im/callback/IIMCallback;)V'
+137685	      access        : 0x0001 (PUBLIC)
+137686	      code          -
+137687	      registers     : 3
+137688	      ins           : 3
+137689	      outs          : 2
+137690	      insns size    : 6 16-bit code units
+137691	46fe7c:                                        |[46fe7c] com.larus.im.internal.core.conversation.ConversationServiceImpl.selectConversationList:(Lcom/larus/im/internal/jni/bean/OmniSelectConversationListRequest;Lcom/larus/im/callback/IIMCallback;)V
+137692	46fe8c: 1a02 41b0                              |0000: const-string v2, "request" // string@b041
+137693	46fe90: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137694	46fe96: 0e00                                   |0005: return-void
+137695	      catches       : (none)
+137696	      positions     :
+137697	      locals        :
+137698	
+137699	    #32              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137700	      name          : 'selectDeviceConversationList'
+137701	      type          : '(Lcom/larus/im/internal/jni/bean/OmniSelectDeviceConversationListRequest;Lcom/larus/im/callback/IIMCallback;)V'
+137702	      access        : 0x0001 (PUBLIC)
+137703	      code          -
+137704	      registers     : 3
+137705	      ins           : 3
+137706	      outs          : 2
+137707	      insns size    : 6 16-bit code units
+137708	46fe98:                                        |[46fe98] com.larus.im.internal.core.conversation.ConversationServiceImpl.selectDeviceConversationList:(Lcom/larus/im/internal/jni/bean/OmniSelectDeviceConversationListRequest;Lcom/larus/im/callback/IIMCallback;)V
+137709	46fea8: 1a02 41b0                              |0000: const-string v2, "request" // string@b041
+137710	46feac: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137711	46feb2: 0e00                                   |0005: return-void
+137712	      catches       : (none)
+137713	      positions     :
+137714	      locals        :
+137715	
+137716	    #33              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137717	      name          : 'selectProjectConversationList'
+137718	      type          : '(Lcom/larus/im/internal/jni/bean/OmniSelectProjectConversationListRequest;Lcom/larus/im/callback/IIMCallback;)V'
+137719	      access        : 0x0001 (PUBLIC)
+137720	      code          -
+137721	      registers     : 3
+137722	      ins           : 3
+137723	      outs          : 2
+137724	      insns size    : 6 16-bit code units
+137725	46feb4:                                        |[46feb4] com.larus.im.internal.core.conversation.ConversationServiceImpl.selectProjectConversationList:(Lcom/larus/im/internal/jni/bean/OmniSelectProjectConversationListRequest;Lcom/larus/im/callback/IIMCallback;)V
+137726	46fec4: 1a02 41b0                              |0000: const-string v2, "request" // string@b041
+137727	46fec8: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137728	46fece: 0e00                                   |0005: return-void
+137729	      catches       : (none)
+137730	      positions     :
+137731	      locals        :
+137732	
+137733	    #34              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+137734	      name          : 'tryInterrupt'
+137735	      type          : '(Ljava/lang/String;ILjava/util/List;ZZLcom/larus/im/internal/jni/bean/OmniBreakReason;Lcom/larus/im/callback/IIMCallback;)V'
+137736	      access        : 0x0001 (PUBLIC)
+137737	      code          -
+137738	      registers     : 22
+137739	      ins           : 8
+137740	      outs          : 8
+137741	      insns size    : 644 16-bit code units
+137742	46fed0:                                        |[46fed0] com.larus.im.internal.core.conversation.ConversationServiceImpl.tryInterrupt:(Ljava/lang/String;ILjava/util/List;ZZLcom/larus/im/internal/jni/bean/OmniBreakReason;Lcom/larus/im/callback/IIMCallback;)V
+137743	46fee0: 07f1                                   |0000: move-object v1, v15
+137744	46fee2: 1a00 ba86                              |0001: const-string v0, "conversationId" // string@86ba
+137745	46fee6: 7120 b2ef 0f00                         |0003: invoke-static {v15, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137746	46feec: 1a00 e078                              |0006: const-string v0, "breakReason" // string@78e0
+137747	46fef0: 0806 1400                              |0008: move-object/from16 v6, v20
+137748	46fef4: 7120 b2ef 0600                         |000a: invoke-static {v6, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+137749	46fefa: 6200 2311                              |000d: sget-object v0, Lcom/larus/im/internal/delegate/a;.b:Lcom/larus/im/internal/delegate/a; // field@1123
+137750	46fefe: 2202 e12b                              |000f: new-instance v2, Ljava/lang/StringBuilder; // type@2be1
+137751	46ff02: 1a03 7cbc                              |0011: const-string v3, "tryInterrupt cvs = " // string@bc7c
+137752	46ff06: 7020 87ec 3200                         |0013: invoke-direct {v2, v3}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ec87
+137753	46ff0c: 6e20 90ec f200                         |0016: invoke-virtual {v2, v15}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ec90
+137754	46ff12: 1a03 8f0e                              |0019: const-string v3, ", conversationType:" // string@0e8f
+137755	46ff16: 6e20 90ec 3200                         |001b: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ec90
+137756	46ff1c: 0203 1000                              |001e: move/from16 v3, v16
+137757	46ff20: 6e20 8bec 3200                         |0020: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@ec8b
+137758	46ff26: 1a04 5711                              |0023: const-string v4, ", inputIds:" // string@1157
+137759	46ff2a: 6e20 90ec 4200                         |0025: invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ec90
+137760	46ff30: 1304 0a00                              |0028: const/16 v4, #int 10 // #a
+137761	46ff34: 1205                                   |002a: const/4 v5, #int 0 // #0
+137762	46ff36: 3811 3b00                              |002b: if-eqz v17, 0066 // +003b
+137763	46ff3a: 0807 1100                              |002d: move-object/from16 v7, v17
+137764	46ff3e: 1f07 ce2b                              |002f: check-cast v7, Ljava/lang/Iterable; // type@2bce
+137765	46ff42: 2208 012c                              |0031: new-instance v8, Ljava/util/ArrayList; // type@2c01
+137766	46ff46: 7120 42ef 4700                         |0033: invoke-static {v7, v4}, Lkotlin/collections/CollectionsKt;.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I // method@ef42
+137767	46ff4c: 0a09                                   |0036: move-result v9
+137768	46ff4e: 7020 daec 9800                         |0037: invoke-direct {v8, v9}, Ljava/util/ArrayList;.<init>:(I)V // method@ecda
+137769	46ff54: 7210 3aec 0700                         |003a: invoke-interface {v7}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@ec3a
+137770	46ff5a: 0c07                                   |003d: move-result-object v7
+137771	46ff5c: 7210 0eed 0700                         |003e: invoke-interface {v7}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+137772	46ff62: 0a09                                   |0041: move-result v9
+137773	46ff64: 3809 2500                              |0042: if-eqz v9, 0067 // +0025
+137774	46ff68: 7210 0fed 0700                         |0044: invoke-interface {v7}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+137775	46ff6e: 0c09                                   |0047: move-result-object v9
+137776	46ff70: 1f09 c306                              |0048: check-cast v9, Lcom/larus/im/bean/message/Message; // type@06c3
+137777	46ff74: 6e10 b20c 0900                         |004a: invoke-virtual {v9}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+137778	46ff7a: 0c0a                                   |004d: move-result-object v10
+137779	46ff7c: 6e10 b10c 0900                         |004e: invoke-virtual {v9}, Lcom/larus/im/bean/message/Message;.getLocalMessageId:()Ljava/lang/String; // method@0cb1
+137780	46ff82: 0c0b                                   |0051: move-result-object v11
+137781	46ff84: 7120 29ef ba00                         |0052: invoke-static {v10, v11}, Lkotlin/TuplesKt;.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair; // method@ef29
+137782	46ff8a: 0c0a                                   |0055: move-result-object v10
+137783	46ff8c: 6e10 b00c 0900                         |0056: invoke-virtual {v9}, Lcom/larus/im/bean/message/Message;.getLocalIndex:()J // method@0cb0
+137784	46ff92: 0b0b                                   |0059: move-result-wide v11
+137785	46ff94: 7120 3fec cb00                         |005a: invoke-static {v11, v12}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@ec3f
+137786	46ff9a: 0c09                                   |005d: move-result-object v9
+137787	46ff9c: 7120 29ef 9a00                         |005e: invoke-static {v10, v9}, Lkotlin/TuplesKt;.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair; // method@ef29
+137788	46ffa2: 0c09                                   |0061: move-result-object v9
+137789	46ffa4: 6e20 dcec 9800                         |0062: invoke-virtual {v8, v9}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@ecdc
+137790	46ffaa: 28d9                                   |0065: goto 003e // -0027
+137791	46ffac: 0758                                   |0066: move-object v8, v5
+137792	46ffae: 6e20 8fec 8200                         |0067: invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@ec8f
+137793	46ffb4: 6e10 94ec 0200                         |006a: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ec94
+137794	46ffba: 0c02                                   |006d: move-result-object v2
+137795	46ffbc: 1a07 5c1e                              |006e: const-string v7, "ConversationServiceImpl" // string@1e5c
+137796	46ffc0: 6e30 2c22 7002                         |0070: invoke-virtual {v0, v7, v2}, Lcom/larus/im/internal/delegate/a;.i:(Ljava/lang/String;Ljava/lang/String;)V // method@222c
+137797	46ffc6: 6000 d608                              |0073: sget v0, Lcom/larus/im/internal/core/conversation/group/d;.h:I // field@08d6
+137798	46ffca: 1200                                   |0075: const/4 v0, #int 0 // #0
+137799	46ffcc: 3911 0400                              |0076: if-nez v17, 007a // +0004
+137800	46ffd0: 2900 dc01                              |0078: goto/16 0254 // +01dc
+137801	46ffd4: 7100 b625 0000                         |007a: invoke-static {}, Lcom/larus/im/internal/delegate/y0;.d:()Lcom/larus/im/internal/delegate/y0$k; // method@25b6
+137802	46ffda: 0c02                                   |007d: move-result-object v2
+137803	46ffdc: 5522 9512                              |007e: iget-boolean v2, v2, Lcom/larus/im/internal/delegate/y0$k;.a:Z // field@1295
+137804	46ffe0: 1a07 501e                              |0080: const-string v7, "ConversationInterruptV3" // string@1e50
+137805	46ffe4: 1a08 0000                              |0082: const-string v8, "" // string@0000
+137806	46ffe8: 3802 de00                              |0084: if-eqz v2, 0162 // +00de
+137807	46ffec: 0802 1100                              |0086: move-object/from16 v2, v17
+137808	46fff0: 1f02 ce2b                              |0088: check-cast v2, Ljava/lang/Iterable; // type@2bce
+137809	46fff4: 2209 2d09                              |008a: new-instance v9, Lcom/larus/im/internal/core/conversation/group/c; // type@092d
+137810	46fff8: 7010 0f15 0900                         |008c: invoke-direct {v9}, Lcom/larus/im/internal/core/conversation/group/c;.<init>:()V // method@150f
+137811	46fffe: 7120 67ef 9200                         |008f: invoke-static {v2, v9}, Lkotlin/collections/CollectionsKt;.sortedWith:(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List; // method@ef67
+137812	470004: 0c02                                   |0092: move-result-object v2
+137813	470006: 1f02 ce2b                              |0093: check-cast v2, Ljava/lang/Iterable; // type@2bce
+137814	47000a: 7210 3aec 0200                         |0095: invoke-interface {v2}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@ec3a
+137815	470010: 0c09                                   |0098: move-result-object v9
+137816	470012: 7210 0eed 0900                         |0099: invoke-interface {v9}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+137817	470018: 0a0a                                   |009c: move-result v10
+137818	47001a: 380a 1000                              |009d: if-eqz v10, 00ad // +0010
+137819	47001e: 7210 0fed 0900                         |009f: invoke-interface {v9}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+137820	470024: 0c0a                                   |00a2: move-result-object v10
+137821	470026: 07ab                                   |00a3: move-object v11, v10
+137822	470028: 1f0b c306                              |00a4: check-cast v11, Lcom/larus/im/bean/message/Message; // type@06c3
+137823	47002c: 7110 1f0d 0b00                         |00a6: invoke-static {v11}, Lcom/larus/im/bean/message/a;.q0:(Lcom/larus/im/bean/message/Message;)Z // method@0d1f
+137824	470032: 0a0b                                   |00a9: move-result v11
+137825	470034: 380b efff                              |00aa: if-eqz v11, 0099 // -0011
+137826	470038: 07a5                                   |00ac: move-object v5, v10
+137827	47003a: 1f05 c306                              |00ad: check-cast v5, Lcom/larus/im/bean/message/Message; // type@06c3
+137828	47003e: 3905 0400                              |00af: if-nez v5, 00b3 // +0004
+137829	470042: 2900 a301                              |00b1: goto/16 0254 // +01a3
+137830	470046: 2200 012c                              |00b3: new-instance v0, Ljava/util/ArrayList; // type@2c01
+137831	47004a: 7010 d9ec 0000                         |00b5: invoke-direct {v0}, Ljava/util/ArrayList;.<init>:()V // method@ecd9
+137832	470050: 7210 3aec 0200                         |00b8: invoke-interface {v2}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@ec3a
+137833	470056: 0c02                                   |00bb: move-result-object v2
+137834	470058: 7210 0eed 0200                         |00bc: invoke-interface {v2}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+137835	47005e: 0a09                                   |00bf: move-result v9
+137836	470060: 3809 1b00                              |00c0: if-eqz v9, 00db // +001b
+137837	470064: 7210 0fed 0200                         |00c2: invoke-interface {v2}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+137838	47006a: 0c09                                   |00c5: move-result-object v9
+137839	47006c: 079a                                   |00c6: move-object v10, v9
+137840	47006e: 1f0a c306                              |00c7: check-cast v10, Lcom/larus/im/bean/message/Message; // type@06c3
+137841	470072: 6e10 bb0c 0a00                         |00c9: invoke-virtual {v10}, Lcom/larus/im/bean/message/Message;.getReplyId:()Ljava/lang/String; // method@0cbb
+137842	470078: 0c0a                                   |00cc: move-result-object v10
+137843	47007a: 6e10 b20c 0500                         |00cd: invoke-virtual {v5}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+137844	470080: 0c0b                                   |00d0: move-result-object v11
+137845	470082: 7120 afef ba00                         |00d1: invoke-static {v10, v11}, Lkotlin/jvm/internal/Intrinsics;.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z // method@efaf
+137846	470088: 0a0a                                   |00d4: move-result v10
+137847	47008a: 380a e7ff                              |00d5: if-eqz v10, 00bc // -0019
+137848	47008e: 6e20 dcec 9000                         |00d7: invoke-virtual {v0, v9}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@ecdc
+137849	470094: 28e2                                   |00da: goto 00bc // -001e
+137850	470096: 6202 2311                              |00db: sget-object v2, Lcom/larus/im/internal/delegate/a;.b:Lcom/larus/im/internal/delegate/a; // field@1123
+137851	47009a: 2209 e12b                              |00dd: new-instance v9, Ljava/lang/StringBuilder; // type@2be1
+137852	47009e: 1a0a a3a2                              |00df: const-string v10, "lastSendMsg:" // string@a2a3
+137853	4700a2: 7020 87ec a900                         |00e1: invoke-direct {v9, v10}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ec87
+137854	4700a8: 6e10 b20c 0500                         |00e4: invoke-virtual {v5}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+137855	4700ae: 0c0a                                   |00e7: move-result-object v10
+137856	4700b0: 6e10 b10c 0500                         |00e8: invoke-virtual {v5}, Lcom/larus/im/bean/message/Message;.getLocalMessageId:()Ljava/lang/String; // method@0cb1
+137857	4700b6: 0c0b                                   |00eb: move-result-object v11
+137858	4700b8: 7120 29ef ba00                         |00ec: invoke-static {v10, v11}, Lkotlin/TuplesKt;.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair; // method@ef29
+137859	4700be: 0c0a                                   |00ef: move-result-object v10
+137860	4700c0: 6e20 8fec a900                         |00f0: invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@ec8f
+137861	4700c6: 1a0a 0d18                              |00f3: const-string v10, ",answerIds:" // string@180d
+137862	4700ca: 6e20 90ec a900                         |00f5: invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ec90
+137863	4700d0: 220a 012c                              |00f8: new-instance v10, Ljava/util/ArrayList; // type@2c01
+137864	4700d4: 7120 42ef 4000                         |00fa: invoke-static {v0, v4}, Lkotlin/collections/CollectionsKt;.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I // method@ef42
+137865	4700da: 0a0b                                   |00fd: move-result v11
+137866	4700dc: 7020 daec ba00                         |00fe: invoke-direct {v10, v11}, Ljava/util/ArrayList;.<init>:(I)V // method@ecda
+137867	4700e2: 6e10 e1ec 0000                         |0101: invoke-virtual {v0}, Ljava/util/ArrayList;.iterator:()Ljava/util/Iterator; // method@ece1
+137868	4700e8: 0c0b                                   |0104: move-result-object v11
+137869	4700ea: 7210 0eed 0b00                         |0105: invoke-interface {v11}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+137870	4700f0: 0a0c                                   |0108: move-result v12
+137871	4700f2: 380c 1800                              |0109: if-eqz v12, 0121 // +0018
+137872	4700f6: 7210 0fed 0b00                         |010b: invoke-interface {v11}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+137873	4700fc: 0c0c                                   |010e: move-result-object v12
+137874	4700fe: 1f0c c306                              |010f: check-cast v12, Lcom/larus/im/bean/message/Message; // type@06c3
+137875	470102: 6e10 b20c 0c00                         |0111: invoke-virtual {v12}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+137876	470108: 0c0d                                   |0114: move-result-object v13
+137877	47010a: 6e10 b10c 0c00                         |0115: invoke-virtual {v12}, Lcom/larus/im/bean/message/Message;.getLocalMessageId:()Ljava/lang/String; // method@0cb1
+137878	470110: 0c0c                                   |0118: move-result-object v12
+137879	470112: 7120 29ef cd00                         |0119: invoke-static {v13, v12}, Lkotlin/TuplesKt;.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair; // method@ef29
+137880	470118: 0c0c                                   |011c: move-result-object v12
+137881	47011a: 6e20 dcec ca00                         |011d: invoke-virtual {v10, v12}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@ecdc
+137882	470120: 28e5                                   |0120: goto 0105 // -001b
+137883	470122: 6e20 8fec a900                         |0121: invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@ec8f
+137884	470128: 6e10 94ec 0900                         |0124: invoke-virtual {v9}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ec94
+137885	47012e: 0c09                                   |0127: move-result-object v9
+137886	470130: 6e30 2c22 7209                         |0128: invoke-virtual {v2, v7, v9}, Lcom/larus/im/internal/delegate/a;.i:(Ljava/lang/String;Ljava/lang/String;)V // method@222c
+137887	470136: 6202 973e                              |012b: sget-object v2, Lcom/larus/im/internal/utils/g;.a:Lcom/ss/kmp/ugc/aweme/concurrent/lock/ReentrantReadWriteLock; // field@3e97
+137888	47013a: 6e10 b10c 0500                         |012d: invoke-virtual {v5}, Lcom/larus/im/bean/message/Message;.getLocalMessageId:()Ljava/lang/String; // method@0cb1
+137889	470140: 0c02                                   |0130: move-result-object v2
+137890	470142: 3902 0300                              |0131: if-nez v2, 0134 // +0003
+137891	470146: 0782                                   |0133: move-object v2, v8
+137892	470148: 2205 012c                              |0134: new-instance v5, Ljava/util/ArrayList; // type@2c01
+137893	47014c: 7120 42ef 4000                         |0136: invoke-static {v0, v4}, Lkotlin/collections/CollectionsKt;.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I // method@ef42
+137894	470152: 0a04                                   |0139: move-result v4
+137895	470154: 7020 daec 4500                         |013a: invoke-direct {v5, v4}, Ljava/util/ArrayList;.<init>:(I)V // method@ecda
+137896	47015a: 6e10 e1ec 0000                         |013d: invoke-virtual {v0}, Ljava/util/ArrayList;.iterator:()Ljava/util/Iterator; // method@ece1
+137897	470160: 0c00                                   |0140: move-result-object v0
+137898	470162: 7210 0eed 0000                         |0141: invoke-interface {v0}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+137899	470168: 0a04                                   |0144: move-result v4
+137900	47016a: 3804 1300                              |0145: if-eqz v4, 0158 // +0013
+137901	47016e: 7210 0fed 0000                         |0147: invoke-interface {v0}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+137902	470174: 0c04                                   |014a: move-result-object v4
+137903	470176: 1f04 c306                              |014b: check-cast v4, Lcom/larus/im/bean/message/Message; // type@06c3
+137904	47017a: 6e10 b20c 0400                         |014d: invoke-virtual {v4}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+137905	470180: 0c04                                   |0150: move-result-object v4
+137906	470182: 3904 0300                              |0151: if-nez v4, 0154 // +0003
+137907	470186: 0784                                   |0153: move-object v4, v8
+137908	470188: 6e20 dcec 4500                         |0154: invoke-virtual {v5, v4}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@ecdc
+137909	47018e: 28ea                                   |0157: goto 0141 // -0016
+137910	470190: 7110 70ef 0500                         |0158: invoke-static {v5}, Lkotlin/collections/CollectionsKt;.toList:(Ljava/lang/Iterable;)Ljava/util/List; // method@ef70
+137911	470196: 0c00                                   |015b: move-result-object v0
+137912	470198: 7120 91b9 0200                         |015c: invoke-static {v2, v0}, Lcom/larus/im/internal/utils/g;.a:(Ljava/lang/String;Ljava/util/List;)Z // method@b991
+137913	47019e: 0a00                                   |015f: move-result v0
+137914	4701a0: 2900 f400                              |0160: goto/16 0254 // +00f4
+137915	4701a4: 0802 1100                              |0162: move-object/from16 v2, v17
+137916	4701a8: 1f02 ce2b                              |0164: check-cast v2, Ljava/lang/Iterable; // type@2bce
+137917	4701ac: 7210 3aec 0200                         |0166: invoke-interface {v2}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@ec3a
+137918	4701b2: 0c09                                   |0169: move-result-object v9
+137919	4701b4: 7210 0eed 0900                         |016a: invoke-interface {v9}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+137920	4701ba: 0a0a                                   |016d: move-result v10
+137921	4701bc: 121b                                   |016e: const/4 v11, #int 1 // #1
+137922	4701be: 380a 1d00                              |016f: if-eqz v10, 018c // +001d
+137923	4701c2: 7210 0fed 0900                         |0171: invoke-interface {v9}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+137924	4701c8: 0c0a                                   |0174: move-result-object v10
+137925	4701ca: 07ac                                   |0175: move-object v12, v10
+137926	4701cc: 1f0c c306                              |0176: check-cast v12, Lcom/larus/im/bean/message/Message; // type@06c3
+137927	4701d0: 6e10 c70c 0c00                         |0178: invoke-virtual {v12}, Lcom/larus/im/bean/message/Message;.getUserType:()I // method@0cc7
+137928	4701d6: 0a0d                                   |017b: move-result v13
+137929	4701d8: 32bd 0c00                              |017c: if-eq v13, v11, 0188 // +000c
+137930	4701dc: 6e10 c70c 0c00                         |017e: invoke-virtual {v12}, Lcom/larus/im/bean/message/Message;.getUserType:()I // method@0cc7
+137931	4701e2: 0a0c                                   |0181: move-result v12
+137932	4701e4: 122d                                   |0182: const/4 v13, #int 2 // #2
+137933	4701e6: 33dc 0300                              |0183: if-ne v12, v13, 0186 // +0003
+137934	4701ea: 2803                                   |0185: goto 0188 // +0003
+137935	4701ec: 120c                                   |0186: const/4 v12, #int 0 // #0
+137936	4701ee: 2802                                   |0187: goto 0189 // +0002
+137937	4701f0: 121c                                   |0188: const/4 v12, #int 1 // #1
+137938	4701f2: 380c e1ff                              |0189: if-eqz v12, 016a // -001f
+137939	4701f6: 2802                                   |018b: goto 018d // +0002
+137940	4701f8: 075a                                   |018c: move-object v10, v5
+137941	4701fa: 1f0a c306                              |018d: check-cast v10, Lcom/larus/im/bean/message/Message; // type@06c3
+137942	4701fe: 390a 4000                              |018f: if-nez v10, 01cf // +0040
+137943	470202: 6205 2311                              |0191: sget-object v5, Lcom/larus/im/internal/delegate/a;.b:Lcom/larus/im/internal/delegate/a; // field@1123
+137944	470206: 2208 e12b                              |0193: new-instance v8, Ljava/lang/StringBuilder; // type@2be1
+137945	47020a: 1a09 26a7                              |0195: const-string v9, "newestMessage is null,inputMsgList:" // string@a726
+137946	47020e: 7020 87ec 9800                         |0197: invoke-direct {v8, v9}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ec87
+137947	470214: 2209 012c                              |019a: new-instance v9, Ljava/util/ArrayList; // type@2c01
+137948	470218: 7120 42ef 4200                         |019c: invoke-static {v2, v4}, Lkotlin/collections/CollectionsKt;.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I // method@ef42
+137949	47021e: 0a04                                   |019f: move-result v4
+137950	470220: 7020 daec 4900                         |01a0: invoke-direct {v9, v4}, Ljava/util/ArrayList;.<init>:(I)V // method@ecda
+137951	470226: 7210 3aec 0200                         |01a3: invoke-interface {v2}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@ec3a
+137952	47022c: 0c02                                   |01a6: move-result-object v2
+137953	47022e: 7210 0eed 0200                         |01a7: invoke-interface {v2}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+137954	470234: 0a04                                   |01aa: move-result v4
+137955	470236: 3804 1800                              |01ab: if-eqz v4, 01c3 // +0018
+137956	47023a: 7210 0fed 0200                         |01ad: invoke-interface {v2}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+137957	470240: 0c04                                   |01b0: move-result-object v4
+137958	470242: 1f04 c306                              |01b1: check-cast v4, Lcom/larus/im/bean/message/Message; // type@06c3
+137959	470246: 6e10 b20c 0400                         |01b3: invoke-virtual {v4}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+137960	47024c: 0c0a                                   |01b6: move-result-object v10
+137961	47024e: 6e10 b10c 0400                         |01b7: invoke-virtual {v4}, Lcom/larus/im/bean/message/Message;.getLocalMessageId:()Ljava/lang/String; // method@0cb1
+137962	470254: 0c04                                   |01ba: move-result-object v4
+137963	470256: 7120 29ef 4a00                         |01bb: invoke-static {v10, v4}, Lkotlin/TuplesKt;.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair; // method@ef29
+137964	47025c: 0c04                                   |01be: move-result-object v4
+137965	47025e: 6e20 dcec 4900                         |01bf: invoke-virtual {v9, v4}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@ecdc
+137966	470264: 28e5                                   |01c2: goto 01a7 // -001b
+137967	470266: 6e20 8fec 9800                         |01c3: invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@ec8f
+137968	47026c: 6e10 94ec 0800                         |01c6: invoke-virtual {v8}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ec94
+137969	470272: 0c02                                   |01c9: move-result-object v2
+137970	470274: 6e30 2c22 7502                         |01ca: invoke-virtual {v5, v7, v2}, Lcom/larus/im/internal/delegate/a;.i:(Ljava/lang/String;Ljava/lang/String;)V // method@222c
+137971	47027a: 2900 8700                              |01cd: goto/16 0254 // +0087
+137972	47027e: 6e10 c70c 0a00                         |01cf: invoke-virtual {v10}, Lcom/larus/im/bean/message/Message;.getUserType:()I // method@0cc7
+137973	470284: 0a09                                   |01d2: move-result v9
+137974	470286: 33b9 0700                              |01d3: if-ne v9, v11, 01da // +0007
+137975	47028a: 6e10 b20c 0a00                         |01d5: invoke-virtual {v10}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+137976	470290: 0c09                                   |01d8: move-result-object v9
+137977	470292: 2805                                   |01d9: goto 01de // +0005
+137978	470294: 6e10 bb0c 0a00                         |01da: invoke-virtual {v10}, Lcom/larus/im/bean/message/Message;.getReplyId:()Ljava/lang/String; // method@0cbb
+137979	47029a: 0c09                                   |01dd: move-result-object v9
+137980	47029c: 7210 3aec 0200                         |01de: invoke-interface {v2}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@ec3a
+137981	4702a2: 0c0b                                   |01e1: move-result-object v11
+137982	4702a4: 7210 0eed 0b00                         |01e2: invoke-interface {v11}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+137983	4702aa: 0a0c                                   |01e5: move-result v12
+137984	4702ac: 380c 1400                              |01e6: if-eqz v12, 01fa // +0014
+137985	4702b0: 7210 0fed 0b00                         |01e8: invoke-interface {v11}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+137986	4702b6: 0c0c                                   |01eb: move-result-object v12
+137987	4702b8: 07cd                                   |01ec: move-object v13, v12
+137988	4702ba: 1f0d c306                              |01ed: check-cast v13, Lcom/larus/im/bean/message/Message; // type@06c3
+137989	4702be: 6e10 b20c 0d00                         |01ef: invoke-virtual {v13}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+137990	4702c4: 0c0d                                   |01f2: move-result-object v13
+137991	4702c6: 7120 afef 9d00                         |01f3: invoke-static {v13, v9}, Lkotlin/jvm/internal/Intrinsics;.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z // method@efaf
+137992	4702cc: 0a0d                                   |01f6: move-result v13
+137993	4702ce: 380d ebff                              |01f7: if-eqz v13, 01e2 // -0015
+137994	4702d2: 07c5                                   |01f9: move-object v5, v12
+137995	4702d4: 1f05 c306                              |01fa: check-cast v5, Lcom/larus/im/bean/message/Message; // type@06c3
+137996	4702d8: 3905 3f00                              |01fc: if-nez v5, 023b // +003f
+137997	4702dc: 6205 2311                              |01fe: sget-object v5, Lcom/larus/im/internal/delegate/a;.b:Lcom/larus/im/internal/delegate/a; // field@1123
+137998	4702e0: 2208 e12b                              |0200: new-instance v8, Ljava/lang/StringBuilder; // type@2be1
+137999	4702e4: 1a09 a2a2                              |0202: const-string v9, "lastSendMsg is null,inputMsgList:" // string@a2a2
+138000	4702e8: 7020 87ec 9800                         |0204: invoke-direct {v8, v9}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ec87
+138001	4702ee: 2209 012c                              |0207: new-instance v9, Ljava/util/ArrayList; // type@2c01
+138002	4702f2: 7120 42ef 4200                         |0209: invoke-static {v2, v4}, Lkotlin/collections/CollectionsKt;.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I // method@ef42
+138003	4702f8: 0a04                                   |020c: move-result v4
+138004	4702fa: 7020 daec 4900                         |020d: invoke-direct {v9, v4}, Ljava/util/ArrayList;.<init>:(I)V // method@ecda
+138005	470300: 7210 3aec 0200                         |0210: invoke-interface {v2}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@ec3a
+138006	470306: 0c02                                   |0213: move-result-object v2
+138007	470308: 7210 0eed 0200                         |0214: invoke-interface {v2}, Ljava/util/Iterator;.hasNext:()Z // method@ed0e
+138008	47030e: 0a04                                   |0217: move-result v4
+138009	470310: 3804 1800                              |0218: if-eqz v4, 0230 // +0018
+138010	470314: 7210 0fed 0200                         |021a: invoke-interface {v2}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@ed0f
+138011	47031a: 0c04                                   |021d: move-result-object v4
+138012	47031c: 1f04 c306                              |021e: check-cast v4, Lcom/larus/im/bean/message/Message; // type@06c3
+138013	470320: 6e10 b20c 0400                         |0220: invoke-virtual {v4}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+138014	470326: 0c0a                                   |0223: move-result-object v10
+138015	470328: 6e10 b10c 0400                         |0224: invoke-virtual {v4}, Lcom/larus/im/bean/message/Message;.getLocalMessageId:()Ljava/lang/String; // method@0cb1
+138016	47032e: 0c04                                   |0227: move-result-object v4
+138017	470330: 7120 29ef 4a00                         |0228: invoke-static {v10, v4}, Lkotlin/TuplesKt;.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair; // method@ef29
+138018	470336: 0c04                                   |022b: move-result-object v4
+138019	470338: 6e20 dcec 4900                         |022c: invoke-virtual {v9, v4}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@ecdc
+138020	47033e: 28e5                                   |022f: goto 0214 // -001b
+138021	470340: 6e20 8fec 9800                         |0230: invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@ec8f
+138022	470346: 6e10 94ec 0800                         |0233: invoke-virtual {v8}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ec94
+138023	47034c: 0c02                                   |0236: move-result-object v2
+138024	47034e: 6e30 2c22 7502                         |0237: invoke-virtual {v5, v7, v2}, Lcom/larus/im/internal/delegate/a;.i:(Ljava/lang/String;Ljava/lang/String;)V // method@222c
+138025	470354: 281a                                   |023a: goto 0254 // +001a
+138026	470356: 6200 973e                              |023b: sget-object v0, Lcom/larus/im/internal/utils/g;.a:Lcom/ss/kmp/ugc/aweme/concurrent/lock/ReentrantReadWriteLock; // field@3e97
+138027	47035a: 6e10 b10c 0500                         |023d: invoke-virtual {v5}, Lcom/larus/im/bean/message/Message;.getLocalMessageId:()Ljava/lang/String; // method@0cb1
+138028	470360: 0c00                                   |0240: move-result-object v0
+138029	470362: 3900 0300                              |0241: if-nez v0, 0244 // +0003
+138030	470366: 0780                                   |0243: move-object v0, v8
+138031	470368: 6e10 b20c 0a00                         |0244: invoke-virtual {v10}, Lcom/larus/im/bean/message/Message;.getMessageId:()Ljava/lang/String; // method@0cb2
+138032	47036e: 0c02                                   |0247: move-result-object v2
+138033	470370: 3902 0300                              |0248: if-nez v2, 024b // +0003
+138034	470374: 2802                                   |024a: goto 024c // +0002
+138035	470376: 0728                                   |024b: move-object v8, v2
+138036	470378: 7110 55ef 0800                         |024c: invoke-static {v8}, Lkotlin/collections/CollectionsKt;.listOf:(Ljava/lang/Object;)Ljava/util/List; // method@ef55
+138037	47037e: 0c02                                   |024f: move-result-object v2
+138038	470380: 7120 91b9 2000                         |0250: invoke-static {v0, v2}, Lcom/larus/im/internal/utils/g;.a:(Ljava/lang/String;Ljava/util/List;)Z // method@b991
+138039	470386: 0a00                                   |0253: move-result v0
+138040	470388: 3800 1900                              |0254: if-eqz v0, 026d // +0019
+138041	47038c: 2208 2f09                              |0256: new-instance v8, Lcom/larus/im/internal/core/conversation/group/d; // type@092f
+138042	470390: 0780                                   |0258: move-object v0, v8
+138043	470392: 07f1                                   |0259: move-object v1, v15
+138044	470394: 0202 1000                              |025a: move/from16 v2, v16
+138045	470398: 0803 1100                              |025c: move-object/from16 v3, v17
+138046	47039c: 0204 1200                              |025e: move/from16 v4, v18
+138047	4703a0: 0205 1300                              |0260: move/from16 v5, v19
+138048	4703a4: 0806 1400                              |0262: move-object/from16 v6, v20
+138049	4703a8: 0807 1500                              |0264: move-object/from16 v7, v21
+138050	4703ac: 7608 1215 0000                         |0266: invoke-direct/range {v0, v1, v2, v3, v4, v5, v6, v7}, Lcom/larus/im/internal/core/conversation/group/d;.<init>:(Ljava/lang/String;ILjava/util/List;ZZLcom/larus/im/internal/jni/bean/OmniBreakReason;Lcom/larus/im/callback/IIMCallback;)V // method@1512
+138051	4703b2: 6e10 e111 0800                         |0269: invoke-virtual {v8}, Lcom/larus/im/internal/core/IMActionProcessor;.run:()V // method@11e1
+138052	4703b8: 2817                                   |026c: goto 0283 // +0017
+138053	4703ba: 2208 2c09                              |026d: new-instance v8, Lcom/larus/im/internal/core/conversation/group/b; // type@092c
+138054	4703be: 0780                                   |026f: move-object v0, v8
+138055	4703c0: 07f1                                   |0270: move-object v1, v15
+138056	4703c2: 0202 1000                              |0271: move/from16 v2, v16
+138057	4703c6: 0803 1100                              |0273: move-object/from16 v3, v17
+138058	4703ca: 0204 1200                              |0275: move/from16 v4, v18
+138059	4703ce: 0205 1300                              |0277: move/from16 v5, v19
+138060	4703d2: 0806 1400                              |0279: move-object/from16 v6, v20
+138061	4703d6: 0807 1500                              |027b: move-object/from16 v7, v21
+138062	4703da: 7608 0c15 0000                         |027d: invoke-direct/range {v0, v1, v2, v3, v4, v5, v6, v7}, Lcom/larus/im/internal/core/conversation/group/b;.<init>:(Ljava/lang/String;ILjava/util/List;ZZLcom/larus/im/internal/jni/bean/OmniBreakReason;Lcom/larus/im/callback/IIMCallback;)V // method@150c
+138063	4703e0: 6e10 e111 0800                         |0280: invoke-virtual {v8}, Lcom/larus/im/internal/core/IMActionProcessor;.run:()V // method@11e1
+138064	4703e6: 0e00                                   |0283: return-void
+138065	      catches       : (none)
+138066	      positions     :
+138067	        0x0000 line=117440512
+138068	        0x0001 line=117440513
+138069	        0x0002 line=117440514
+138070	        0x0003 line=117440515
+138071	        0x0004 line=117440516
+138072	        0x0005 line=117440517
+138073	        0x0006 line=117440518
+138074	        0x0007 line=117440519
+138075	        0x0008 line=117440520
+138076	        0x0009 line=117440521
+138077	        0x000a line=117440522
+138078	        0x000b line=117440523
+138079	        0x000c line=117440524
+138080	        0x000d line=117440525
+138081	        0x000e line=117440526
+138082	        0x000f line=117440527
+138083	        0x0010 line=117440528
+138084	        0x0011 line=117440529
+138085	        0x0012 line=117440530
+138086	        0x0013 line=117440531
+138087	        0x0014 line=117440532
+138088	        0x0015 line=117440533
+138089	        0x0016 line=117440534
+138090	        0x0017 line=117440535
+138091	        0x0018 line=117440536
+138092	        0x0019 line=117440537
+138093	        0x001a line=117440538
+138094	        0x001b line=117440539
+138095	        0x001c line=117440540
+138096	        0x001d line=117440541
+138097	        0x001e line=117440542
+138098	        0x001f line=117440543
+138099	        0x0020 line=117440544
+138100	        0x0021 line=117440545
+138101	        0x0022 line=117440546
+138102	        0x0023 line=117440547
+138103	        0x0024 line=117440548
+138104	        0x0025 line=117440549
+138105	        0x0026 line=117440550
+138106	        0x0027 line=117440551
+138107	        0x0028 line=117440552
+138108	        0x0029 line=117440553
+138109	        0x002a line=117440554
+138110	        0x002b line=117440555
+138111	        0x002c line=117440556
+138112	        0x002d line=117440557
+138113	        0x002e line=117440558
+138114	        0x002f line=117440559
+138115	        0x0030 line=117440560
+138116	        0x0031 line=117440561
+138117	        0x0032 line=117440562
+138118	        0x0033 line=117440563
+138119	        0x0034 line=117440564
+138120	        0x0035 line=117440565
+138121	        0x0036 line=117440566
+138122	        0x0037 line=117440567
+138123	        0x0038 line=117440568
+138124	        0x0039 line=117440569
+138125	        0x003a line=117440570
+138126	        0x003b line=117440571
+138127	        0x003c line=117440572
+138128	        0x003d line=117440573
+138129	        0x003e line=117440574
+138130	        0x003f line=117440575
+138131	        0x0040 line=117440576
+138132	        0x0041 line=117440577
+138133	        0x0042 line=117440578
+138134	        0x0043 line=117440579
+138135	        0x0044 line=117440580
+138136	        0x0045 line=117440581
+138137	        0x0046 line=117440582
+138138	        0x0047 line=117440583
+138139	        0x0048 line=117440584
+138140	        0x0049 line=117440585
+138141	        0x004a line=117440586
+138142	        0x004b line=117440587
+138143	        0x004c line=117440588
+138144	        0x004d line=117440589
+138145	        0x004e line=117440590
+138146	        0x004f line=117440591
+138147	        0x0050 line=117440592
+138148	        0x0051 line=117440593
+138149	        0x0052 line=117440594
+138150	        0x0053 line=117440595
+138151	        0x0054 line=117440596
+138152	        0x0055 line=117440597
+138153	        0x0056 line=117440598
+138154	        0x0057 line=117440599
+138155	        0x0058 line=117440600
+138156	        0x0059 line=117440601
+138157	        0x005a line=117440602
+138158	        0x005b line=117440603
+138159	        0x005c line=117440604
+138160	        0x005d line=117440605
+138161	        0x005e line=117440606
+138162	        0x005f line=117440607
+138163	        0x0060 line=117440608
+138164	        0x0061 line=117440609
+138165	        0x0062 line=117440610
+138166	        0x0063 line=117440611
+138167	        0x0064 line=117440612
+138168	        0x0065 line=117440613
+138169	        0x0066 line=117440614
+138170	        0x0067 line=117440615
+138171	        0x0068 line=117440616
+138172	        0x0069 line=117440617
+138173	        0x006a line=117440618
+138174	        0x006b line=117440619
+138175	        0x006c line=117440620
+138176	        0x006d line=117440621
+138177	        0x006e line=117440622
+138178	        0x006f line=117440623
+138179	        0x0070 line=117440624
+138180	        0x0071 line=117440625
+138181	        0x0072 line=117440626
+138182	        0x0073 line=117440627
+138183	        0x0074 line=117440628
+138184	        0x0075 line=117440629
+138185	        0x0076 line=117440630
+138186	        0x0077 line=117440631
+138187	        0x0078 line=117440632
+138188	        0x0079 line=117440633
+138189	        0x007a line=117440634
+138190	        0x007b line=117440635
+138191	        0x007c line=117440636
+138192	        0x007d line=117440637
+138193	        0x007e line=117440638
+138194	        0x007f line=117440639
+138195	        0x0080 line=117440640
+138196	        0x0081 line=117440641
+138197	        0x0082 line=117440642
+138198	        0x0083 line=117440643
+138199	        0x0084 line=117440644
+138200	        0x0085 line=117440645
+138201	        0x0086 line=117440646
+138202	        0x0087 line=117440647
+138203	        0x0088 line=117440648
+138204	        0x0089 line=117440649
+138205	        0x008a line=117440650
+138206	        0x008b line=117440651
+138207	        0x008c line=117440652
+138208	        0x008d line=117440653
+138209	        0x008e line=117440654
+138210	        0x008f line=117440655
+138211	        0x0090 line=117440656
+138212	        0x0091 line=117440657
+138213	        0x0092 line=117440658
+138214	        0x0093 line=117440659
+138215	        0x0094 line=117440660
+138216	        0x0095 line=117440661
+138217	        0x0096 line=117440662
+138218	        0x0097 line=117440663
+138219	        0x0098 line=117440664
+138220	        0x0099 line=117440665
+138221	        0x009a line=117440666
+138222	        0x009b line=117440667
+138223	        0x009c line=117440668
+138224	        0x009d line=117440669
+138225	        0x009e line=117440670
+138226	        0x009f line=117440671
+138227	        0x00a0 line=117440672
+138228	        0x00a1 line=117440673
+138229	        0x00a2 line=117440674
+138230	        0x00a3 line=117440675
+138231	        0x00a4 line=117440676
+138232	        0x00a5 line=117440677
+138233	        0x00a6 line=117440678
+138234	        0x00a7 line=117440679
+138235	        0x00a8 line=117440680
+138236	        0x00a9 line=117440681
+138237	        0x00aa line=117440682
+138238	        0x00ab line=117440683
+138239	        0x00ac line=117440684
+138240	        0x00ad line=117440685
+138241	        0x00ae line=117440686
+138242	        0x00af line=117440687
+138243	        0x00b0 line=117440688
+138244	        0x00b1 line=117440689
+138245	        0x00b2 line=117440690
+138246	        0x00b3 line=117440691
+138247	        0x00b4 line=117440692
+138248	        0x00b5 line=117440693
+138249	        0x00b6 line=117440694
+138250	        0x00b7 line=117440695
+138251	        0x00b8 line=117440696
+138252	        0x00b9 line=117440697
+138253	        0x00ba line=117440698
+138254	        0x00bb line=117440699
+138255	        0x00bc line=117440700
+138256	        0x00bd line=117440701
+138257	        0x00be line=117440702
+138258	        0x00bf line=117440703
+138259	        0x00c0 line=117440704
+138260	        0x00c1 line=117440705
+138261	        0x00c2 line=117440706
+138262	        0x00c3 line=117440707
+138263	        0x00c4 line=117440708
+138264	        0x00c5 line=117440709
+138265	        0x00c6 line=117440710
+138266	        0x00c7 line=117440711
+138267	        0x00c8 line=117440712
+138268	        0x00c9 line=117440713
+138269	        0x00ca line=117440714
+138270	        0x00cb line=117440715
+138271	        0x00cc line=117440716
+138272	        0x00cd line=117440717
+138273	        0x00ce line=117440718
+138274	        0x00cf line=117440719
+138275	        0x00d0 line=117440720
+138276	        0x00d1 line=117440721
+138277	        0x00d2 line=117440722
+138278	        0x00d3 line=117440723
+138279	        0x00d4 line=117440724
+138280	        0x00d5 line=117440725
+138281	        0x00d6 line=117440726
+138282	        0x00d7 line=117440727
+138283	        0x00d8 line=117440728
+138284	        0x00d9 line=117440729
+138285	        0x00da line=117440730
+138286	        0x00db line=117440731
+138287	        0x00dc line=117440732
+138288	        0x00dd line=117440733
+138289	        0x00de line=117440734
+138290	        0x00df line=117440735
+138291	        0x00e0 line=117440736
+138292	        0x00e1 line=117440737
+138293	        0x00e2 line=117440738
+138294	        0x00e3 line=117440739
+138295	        0x00e4 line=117440740
+138296	        0x00e5 line=117440741
+138297	        0x00e6 line=117440742
+138298	        0x00e7 line=117440743
+138299	        0x00e8 line=117440744
+138300	        0x00e9 line=117440745
+138301	        0x00ea line=117440746
+138302	        0x00eb line=117440747
+138303	        0x00ec line=117440748
+138304	        0x00ed line=117440749
+138305	        0x00ee line=117440750
+138306	        0x00ef line=117440751
+138307	        0x00f0 line=117440752
+138308	        0x00f1 line=117440753
+138309	        0x00f2 line=117440754
+138310	        0x00f3 line=117440755
+138311	        0x00f4 line=117440756
+138312	        0x00f5 line=117440757
+138313	        0x00f6 line=117440758
+138314	        0x00f7 line=117440759
+138315	        0x00f8 line=117440760
+138316	        0x00f9 line=117440761
+138317	        0x00fa line=117440762
+138318	        0x00fb line=117440763
+138319	        0x00fc line=117440764
+138320	        0x00fd line=117440765
+138321	        0x00fe line=117440766
+138322	        0x00ff line=117440767
+138323	        0x0100 line=117440768
+138324	        0x0101 line=117440769
+138325	        0x0102 line=117440770
+138326	        0x0103 line=117440771
+138327	        0x0104 line=117440772
+138328	        0x0105 line=117440773
+138329	        0x0106 line=117440774
+138330	        0x0107 line=117440775
+138331	        0x0108 line=117440776
+138332	        0x0109 line=117440777
+138333	        0x010a line=117440778
+138334	        0x010b line=117440779
+138335	        0x010c line=117440780
+138336	        0x010d line=117440781
+138337	        0x010e line=117440782
+138338	        0x010f line=117440783
+138339	        0x0110 line=117440784
+138340	        0x0111 line=117440785
+138341	        0x0112 line=117440786
+138342	        0x0113 line=117440787
+138343	        0x0114 line=117440788
+138344	        0x0115 line=117440789
+138345	        0x0116 line=117440790
+138346	        0x0117 line=117440791
+138347	        0x0118 line=117440792
+138348	        0x0119 line=117440793
+138349	        0x011a line=117440794
+138350	        0x011b line=117440795
+138351	        0x011c line=117440796
+138352	        0x011d line=117440797
+138353	        0x011e line=117440798
+138354	        0x011f line=117440799
+138355	        0x0120 line=117440800
+138356	        0x0121 line=117440801
+138357	        0x0122 line=117440802
+138358	        0x0123 line=117440803
+138359	        0x0124 line=117440804
+138360	        0x0125 line=117440805
+138361	        0x0126 line=117440806
+138362	        0x0127 line=117440807
+138363	        0x0128 line=117440808
+138364	        0x0129 line=117440809
+138365	        0x012a line=117440810
+138366	        0x012b line=117440811
+138367	        0x012c line=117440812
+138368	        0x012d line=117440813
+138369	        0x012e line=117440814
+138370	        0x012f line=117440815
+138371	        0x0130 line=117440816
+138372	        0x0131 line=117440817
+138373	        0x0132 line=117440818
+138374	        0x0133 line=117440819
+138375	        0x0134 line=117440820
+138376	        0x0135 line=117440821
+138377	        0x0136 line=117440822
+138378	        0x0137 line=117440823
+138379	        0x0138 line=117440824
+138380	        0x0139 line=117440825
+138381	        0x013a line=117440826
+138382	        0x013b line=117440827
+138383	        0x013c line=117440828
+138384	        0x013d line=117440829
+138385	        0x013e line=117440830
+138386	        0x013f line=117440831
+138387	        0x0140 line=117440832
+138388	        0x0141 line=117440833
+138389	        0x0142 line=117440834
+138390	        0x0143 line=117440835
+138391	        0x0144 line=117440836
+138392	        0x0145 line=117440837
+138393	        0x0146 line=117440838
+138394	        0x0147 line=117440839
+138395	        0x0148 line=117440840
+138396	        0x0149 line=117440841
+138397	        0x014a line=117440842
+138398	        0x014b line=117440843
+138399	        0x014c line=117440844
+138400	        0x014d line=117440845
+138401	        0x014e line=117440846
+138402	        0x014f line=117440847
+138403	        0x0150 line=117440848
+138404	        0x0151 line=117440849
+138405	        0x0152 line=117440850
+138406	        0x0153 line=117440851
+138407	        0x0154 line=117440852
+138408	        0x0155 line=117440853
+138409	        0x0156 line=117440854
+138410	        0x0157 line=117440855
+138411	        0x0158 line=117440856
+138412	        0x0159 line=117440857
+138413	        0x015a line=117440858
+138414	        0x015b line=117440859
+138415	        0x015c line=117440860
+138416	        0x015d line=117440861
+138417	        0x015e line=117440862
+138418	        0x015f line=117440863
+138419	        0x0160 line=117440864
+138420	        0x0161 line=117440865
+138421	        0x0162 line=117440866
+138422	        0x0163 line=117440867
+138423	        0x0164 line=117440868
+138424	        0x0165 line=117440869
+138425	        0x0166 line=117440870
+138426	        0x0167 line=117440871
+138427	        0x0168 line=117440872
+138428	        0x0169 line=117440873
+138429	        0x016a line=117440874
+138430	        0x016b line=117440875
+138431	        0x016c line=117440876
+138432	        0x016d line=117440877
+138433	        0x016e line=117440878
+138434	        0x016f line=117440879
+138435	        0x0170 line=117440880
+138436	        0x0171 line=117440881
+138437	        0x0172 line=117440882
+138438	        0x0173 line=117440883
+138439	        0x0174 line=117440884
+138440	        0x0175 line=117440885
+138441	        0x0176 line=117440886
+138442	        0x0177 line=117440887
+138443	        0x0178 line=117440888
+138444	        0x0179 line=117440889
+138445	        0x017a line=117440890
+138446	        0x017b line=117440891
+138447	        0x017c line=117440892
+138448	        0x017d line=117440893
+138449	        0x017e line=117440894
+138450	        0x017f line=117440895
+138451	        0x0180 line=117440896
+138452	        0x0181 line=117440897
+138453	        0x0182 line=117440898
+138454	        0x0183 line=117440899
+138455	        0x0184 line=117440900
+138456	        0x0185 line=117440901
+138457	        0x0186 line=117440902
+138458	        0x0187 line=117440903
+138459	        0x0188 line=117440904
+138460	        0x0189 line=117440905
+138461	        0x018a line=117440906
+138462	        0x018b line=117440907
+138463	        0x018c line=117440908
+138464	        0x018d line=117440909
+138465	        0x018e line=117440910
+138466	        0x018f line=117440911
+138467	        0x0190 line=117440912
+138468	        0x0191 line=117440913
+138469	        0x0192 line=117440914
+138470	        0x0193 line=117440915
+138471	        0x0194 line=117440916
+138472	        0x0195 line=117440917
+138473	        0x0196 line=117440918
+138474	        0x0197 line=117440919
+138475	        0x0198 line=117440920
+138476	        0x0199 line=117440921
+138477	        0x019a line=117440922
+138478	        0x019b line=117440923
+138479	        0x019c line=117440924
+138480	        0x019d line=117440925
+138481	        0x019e line=117440926
+138482	        0x019f line=117440927
+138483	        0x01a0 line=117440928
+138484	        0x01a1 line=117440929
+138485	        0x01a2 line=117440930
+138486	        0x01a3 line=117440931
+138487	        0x01a4 line=117440932
+138488	        0x01a5 line=117440933
+138489	        0x01a6 line=117440934
+138490	        0x01a7 line=117440935
+138491	        0x01a8 line=117440936
+138492	        0x01a9 line=117440937
+138493	        0x01aa line=117440938
+138494	        0x01ab line=117440939
+138495	        0x01ac line=117440940
+138496	        0x01ad line=117440941
+138497	        0x01ae line=117440942
+138498	        0x01af line=117440943
+138499	        0x01b0 line=117440944
+138500	        0x01b1 line=117440945
+138501	        0x01b2 line=117440946
+138502	        0x01b3 line=117440947
+138503	        0x01b4 line=117440948
+138504	        0x01b5 line=117440949
+138505	        0x01b6 line=117440950
+138506	        0x01b7 line=117440951
+138507	        0x01b8 line=117440952
+138508	        0x01b9 line=117440953
+138509	        0x01ba line=117440954
+138510	        0x01bb line=117440955
+138511	        0x01bc line=117440956
+138512	        0x01bd line=117440957
+138513	        0x01be line=117440958
+138514	        0x01bf line=117440959
+138515	        0x01c0 line=117440960
+138516	        0x01c1 line=117440961
+138517	        0x01c2 line=117440962
+138518	        0x01c3 line=117440963
+138519	        0x01c4 line=117440964
+138520	        0x01c5 line=117440965
+138521	        0x01c6 line=117440966
+138522	        0x01c7 line=117440967
+138523	        0x01c8 line=117440968
+138524	        0x01c9 line=117440969
+138525	        0x01ca line=117440970
+138526	        0x01cb line=117440971
+138527	        0x01cc line=117440972
+138528	        0x01cd line=117440973
+138529	        0x01ce line=117440974
+138530	        0x01cf line=117440975
+138531	        0x01d0 line=117440976
+138532	        0x01d1 line=117440977
+138533	        0x01d2 line=117440978
+138534	        0x01d3 line=117440979
+138535	        0x01d4 line=117440980
+138536	        0x01d5 line=117440981
+138537	        0x01d6 line=117440982
+138538	        0x01d7 line=117440983
+138539	        0x01d8 line=117440984
+138540	        0x01d9 line=117440985
+138541	        0x01da line=117440986
+138542	        0x01db line=117440987
+138543	        0x01dc line=117440988
+138544	        0x01dd line=117440989
+138545	        0x01de line=117440990
+138546	        0x01df line=117440991
+138547	        0x01e0 line=117440992
+138548	        0x01e1 line=117440993
+138549	        0x01e2 line=117440994
+138550	        0x01e3 line=117440995
+138551	        0x01e4 line=117440996
+138552	        0x01e5 line=117440997
+138553	        0x01e6 line=117440998
+138554	        0x01e7 line=117440999
+138555	        0x01e8 line=117441000
+138556	        0x01e9 line=117441001
+138557	        0x01ea line=117441002
+138558	        0x01eb line=117441003
+138559	        0x01ec line=117441004
+138560	        0x01ed line=117441005
+138561	        0x01ee line=117441006
+138562	        0x01ef line=117441007
+138563	        0x01f0 line=117441008
+138564	        0x01f1 line=117441009
+138565	        0x01f2 line=117441010
+138566	        0x01f3 line=117441011
+138567	        0x01f4 line=117441012
+138568	        0x01f5 line=117441013
+138569	        0x01f6 line=117441014
+138570	        0x01f7 line=117441015
+138571	        0x01f8 line=117441016
+138572	        0x01f9 line=117441017
+138573	        0x01fa line=117441018
+138574	        0x01fb line=117441019
+138575	        0x01fc line=117441020
+138576	        0x01fd line=117441021
+138577	        0x01fe line=117441022
+138578	        0x01ff line=117441023
+138579	        0x0200 line=117441024
+138580	        0x0201 line=117441025
+138581	        0x0202 line=117441026
+138582	        0x0203 line=117441027
+138583	        0x0204 line=117441028
+138584	        0x0205 line=117441029
+138585	        0x0206 line=117441030
+138586	        0x0207 line=117441031
+138587	        0x0208 line=117441032
+138588	        0x0209 line=117441033
+138589	        0x020a line=117441034
+138590	        0x020b line=117441035
+138591	        0x020c line=117441036
+138592	        0x020d line=117441037
+138593	        0x020e line=117441038
+138594	        0x020f line=117441039
+138595	        0x0210 line=117441040
+138596	        0x0211 line=117441041
+138597	        0x0212 line=117441042
+138598	        0x0213 line=117441043
+138599	        0x0214 line=117441044
+138600	        0x0215 line=117441045
+138601	        0x0216 line=117441046
+138602	        0x0217 line=117441047
+138603	        0x0218 line=117441048
+138604	        0x0219 line=117441049
+138605	        0x021a line=117441050
+138606	        0x021b line=117441051
+138607	        0x021c line=117441052
+138608	        0x021d line=117441053
+138609	        0x021e line=117441054
+138610	        0x021f line=117441055
+138611	        0x0220 line=117441056
+138612	        0x0221 line=117441057
+138613	        0x0222 line=117441058
+138614	        0x0223 line=117441059
+138615	        0x0224 line=117441060
+138616	        0x0225 line=117441061
+138617	        0x0226 line=117441062
+138618	        0x0227 line=117441063
+138619	        0x0228 line=117441064
+138620	        0x0229 line=117441065
+138621	        0x022a line=117441066
+138622	        0x022b line=117441067
+138623	        0x022c line=117441068
+138624	        0x022d line=117441069
+138625	        0x022e line=117441070
+138626	        0x022f line=117441071
+138627	        0x0230 line=117441072
+138628	        0x0231 line=117441073
+138629	        0x0232 line=117441074
+138630	        0x0233 line=117441075
+138631	        0x0234 line=117441076
+138632	        0x0235 line=117441077
+138633	        0x0236 line=117441078
+138634	        0x0237 line=117441079
+138635	        0x0238 line=117441080
+138636	        0x0239 line=117441081
+138637	        0x023a line=117441082
+138638	        0x023b line=117441083
+138639	        0x023c line=117441084
+138640	        0x023d line=117441085
+138641	        0x023e line=117441086
+138642	        0x023f line=117441087
+138643	        0x0240 line=117441088
+138644	        0x0241 line=117441089
+138645	        0x0242 line=117441090
+138646	        0x0243 line=117441091
+138647	        0x0244 line=117441092
+138648	        0x0245 line=117441093
+138649	        0x0246 line=117441094
+138650	        0x0247 line=117441095
+138651	        0x0248 line=117441096
+138652	        0x0249 line=117441097
+138653	        0x024a line=117441098
+138654	        0x024b line=117441099
+138655	        0x024c line=117441100
+138656	        0x024d line=117441101
+138657	        0x024e line=117441102
+138658	        0x024f line=117441103
+138659	        0x0250 line=117441104
+138660	        0x0251 line=117441105
+138661	        0x0252 line=117441106
+138662	        0x0253 line=117441107
+138663	        0x0254 line=117441108
+138664	        0x0255 line=117441109
+138665	        0x0256 line=117441110
+138666	        0x0257 line=117441111
+138667	        0x0258 line=117441112
+138668	        0x0259 line=117441113
+138669	        0x025a line=117441114
+138670	        0x025b line=117441115
+138671	        0x025c line=117441116
+138672	        0x025d line=117441117
+138673	        0x025e line=117441118
+138674	        0x025f line=117441119
+138675	        0x0260 line=117441120
+138676	        0x0261 line=117441121
+138677	        0x0262 line=117441122
+138678	        0x0263 line=117441123
+138679	        0x0264 line=117441124
+138680	        0x0265 line=117441125
+138681	        0x0266 line=117441126
+138682	        0x0267 line=117441127
+138683	        0x0268 line=117441128
+138684	        0x0269 line=117441129
+138685	        0x026a line=117441130
+138686	        0x026b line=117441131
+138687	        0x026c line=117441132
+138688	        0x026d line=117441133
+138689	        0x026e line=117441134
+138690	        0x026f line=117441135
+138691	        0x0270 line=117441136
+138692	        0x0271 line=117441137
+138693	        0x0272 line=117441138
+138694	        0x0273 line=117441139
+138695	        0x0274 line=117441140
+138696	        0x0275 line=117441141
+138697	        0x0276 line=117441142
+138698	        0x0277 line=117441143
+138699	        0x0278 line=117441144
+138700	        0x0279 line=117441145
+138701	        0x027a line=117441146
+138702	        0x027b line=117441147
+138703	        0x027c line=117441148
+138704	        0x027d line=117441149
+138705	        0x027e line=117441150
+138706	        0x027f line=117441151
+138707	        0x0280 line=117441152
+138708	        0x0281 line=117441153
+138709	        0x0282 line=117441154
+138710	        0x0283 line=117441155
+138711	      locals        :
+138712	        0x0000 - 0x0284 reg=14 this Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;
+138713	        0x0000 - 0x0284 reg=15 (null) Ljava/lang/String;
+138714	        0x0000 - 0x0284 reg=16 (null) I
+138715	        0x0000 - 0x0284 reg=17 (null) Ljava/util/List;
+138716	        0x0000 - 0x0284 reg=18 (null) Z
+138717	        0x0000 - 0x0284 reg=19 (null) Z
+138718	        0x0000 - 0x0284 reg=20 (null) Lcom/larus/im/internal/jni/bean/OmniBreakReason;
+138719	        0x0000 - 0x0284 reg=21 (null) Lcom/larus/im/callback/IIMCallback;
+138720	
+138721	    #35              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+138722	      name          : 'updateArchivedStatus'
+138723	      type          : '(Ljava/lang/String;Ljava/util/List;ZLcom/larus/im/internal/jni/bean/ArchiveTimeSortBy;JJLcom/larus/im/callback/IIMCallback;)V'
+138724	      access        : 0x0001 (PUBLIC)
+138725	      code          -
+138726	      registers     : 10
+138727	      ins           : 10
+138728	      outs          : 3
+138729	      insns size    : 22 16-bit code units
+138730	4703e8:                                        |[4703e8] com.larus.im.internal.core.conversation.ConversationServiceImpl.updateArchivedStatus:(Ljava/lang/String;Ljava/util/List;ZLcom/larus/im/internal/jni/bean/ArchiveTimeSortBy;JJLcom/larus/im/callback/IIMCallback;)V
+138731	4703f8: 1a01 6176                              |0000: const-string v1, "archiveTimeSortBy" // string@7661
+138732	4703fc: 7120 b2ef 1400                         |0002: invoke-static {v4, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138733	470402: 6201 2311                              |0005: sget-object v1, Lcom/larus/im/internal/delegate/a;.b:Lcom/larus/im/internal/delegate/a; // field@1123
+138734	470406: 1a02 5c1e                              |0007: const-string v2, "ConversationServiceImpl" // string@1e5c
+138735	47040a: 1a03 48bd                              |0009: const-string v3, "updateArchivedStatus error, need omni sdk" // string@bd48
+138736	47040e: 6e30 2a22 2103                         |000b: invoke-virtual {v1, v2, v3}, Lcom/larus/im/internal/delegate/a;.e:(Ljava/lang/String;Ljava/lang/String;)V // method@222a
+138737	470414: 3809 0700                              |000e: if-eqz v9, 0015 // +0007
+138738	470418: 6201 7103                              |0010: sget-object v1, Lcom/larus/im/bean/conversation/ArchiveStatus;.FAILED:Lcom/larus/im/bean/conversation/ArchiveStatus; // field@0371
+138739	47041c: 7220 5f0d 1900                         |0012: invoke-interface {v9, v1}, Lcom/larus/im/callback/IIMCallback;.onSuccess:(Ljava/lang/Object;)V // method@0d5f
+138740	470422: 0e00                                   |0015: return-void
+138741	      catches       : (none)
+138742	      positions     :
+138743	        0x0000 line=117440512
+138744	        0x0001 line=117440513
+138745	        0x0002 line=117440514
+138746	        0x0003 line=117440515
+138747	        0x0004 line=117440516
+138748	        0x0005 line=117440517
+138749	        0x0006 line=117440518
+138750	        0x0007 line=117440519
+138751	        0x0008 line=117440520
+138752	        0x0009 line=117440521
+138753	        0x000a line=117440522
+138754	        0x000b line=117440523
+138755	        0x000c line=117440524
+138756	        0x000d line=117440525
+138757	        0x000e line=117440526
+138758	        0x000f line=117440527
+138759	        0x0010 line=117440528
+138760	        0x0011 line=117440529
+138761	        0x0012 line=117440530
+138762	        0x0013 line=117440531
+138763	        0x0014 line=117440532
+138764	        0x0015 line=117440533
+138765	      locals        :
+138766	        0x0000 - 0x0016 reg=0 this Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;
+138767	        0x0000 - 0x0016 reg=1 (null) Ljava/lang/String;
+138768	        0x0000 - 0x0016 reg=2 (null) Ljava/util/List;
+138769	        0x0000 - 0x0016 reg=3 (null) Z
+138770	        0x0000 - 0x0016 reg=4 (null) Lcom/larus/im/internal/jni/bean/ArchiveTimeSortBy;
+138771	        0x0000 - 0x0016 reg=5 (null) J
+138772	        0x0000 - 0x0016 reg=7 (null) J
+138773	        0x0000 - 0x0016 reg=9 (null) Lcom/larus/im/callback/IIMCallback;
+138774	
+138775	    #36              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+138776	      name          : 'updateConversationCreateScene'
+138777	      type          : '(Ljava/lang/String;IILcom/larus/im/callback/IIMCallback;)V'
+138778	      access        : 0x0001 (PUBLIC)
+138779	      code          -
+138780	      registers     : 5
+138781	      ins           : 5
+138782	      outs          : 2
+138783	      insns size    : 6 16-bit code units
+138784	470424:                                        |[470424] com.larus.im.internal.core.conversation.ConversationServiceImpl.updateConversationCreateScene:(Ljava/lang/String;IILcom/larus/im/callback/IIMCallback;)V
+138785	470434: 1a02 ba86                              |0000: const-string v2, "conversationId" // string@86ba
+138786	470438: 7120 b2ef 2100                         |0002: invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138787	47043e: 0e00                                   |0005: return-void
+138788	      catches       : (none)
+138789	      positions     :
+138790	      locals        :
+138791	
+138792	    #37              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+138793	      name          : 'updateConversationLocal'
+138794	      type          : '(Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/callback/IIMCallback;)V'
+138795	      access        : 0x0001 (PUBLIC)
+138796	      code          -
+138797	      registers     : 4
+138798	      ins           : 4
+138799	      outs          : 2
+138800	      insns size    : 11 16-bit code units
+138801	470440:                                        |[470440] com.larus.im.internal.core.conversation.ConversationServiceImpl.updateConversationLocal:(Ljava/lang/String;Ljava/util/Map;Lcom/larus/im/callback/IIMCallback;)V
+138802	470450: 1a03 ba86                              |0000: const-string v3, "conversationId" // string@86ba
+138803	470454: 7120 b2ef 3100                         |0002: invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138804	47045a: 1a01 a2aa                              |0005: const-string v1, "optionMap" // string@aaa2
+138805	47045e: 7120 b2ef 1200                         |0007: invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138806	470464: 0e00                                   |000a: return-void
+138807	      catches       : (none)
+138808	      positions     :
+138809	      locals        :
+138810	
+138811	    #38              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+138812	      name          : 'updateConversationTitle'
+138813	      type          : '(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V'
+138814	      access        : 0x0001 (PUBLIC)
+138815	      code          -
+138816	      registers     : 4
+138817	      ins           : 4
+138818	      outs          : 2
+138819	      insns size    : 11 16-bit code units
+138820	470468:                                        |[470468] com.larus.im.internal.core.conversation.ConversationServiceImpl.updateConversationTitle:(Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V
+138821	470478: 1a03 ba86                              |0000: const-string v3, "conversationId" // string@86ba
+138822	47047c: 7120 b2ef 3100                         |0002: invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138823	470482: 1a01 1ba7                              |0005: const-string v1, "newTitle" // string@a71b
+138824	470486: 7120 b2ef 1200                         |0007: invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138825	47048c: 0e00                                   |000a: return-void
+138826	      catches       : (none)
+138827	      positions     :
+138828	      locals        :
+138829	
+138830	    #39              : (in Lcom/larus/im/internal/core/conversation/ConversationServiceImpl;)
+138831	      name          : 'updateSectionName'
+138832	      type          : '(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V'
+138833	      access        : 0x0001 (PUBLIC)
+138834	      code          -
+138835	      registers     : 5
+138836	      ins           : 5
+138837	      outs          : 2
+138838	      insns size    : 16 16-bit code units
+138839	470490:                                        |[470490] com.larus.im.internal.core.conversation.ConversationServiceImpl.updateSectionName:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/larus/im/callback/IIMCallback;)V
+138840	4704a0: 1a04 ba86                              |0000: const-string v4, "conversationId" // string@86ba
+138841	4704a4: 7120 b2ef 4100                         |0002: invoke-static {v1, v4}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138842	4704aa: 1a01 e6b2                              |0005: const-string v1, "sectionId" // string@b2e6
+138843	4704ae: 7120 b2ef 1200                         |0007: invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138844	4704b4: 1a01 15a7                              |000a: const-string v1, "newSectionName" // string@a715
+138845	4704b8: 7120 b2ef 1300                         |000c: invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@efb2
+138846	4704be: 0e00                                   |000f: return-void
+138847	      catches       : (none)
+138848	      positions     :
+138849	      locals        :
+138850	
+138851	  source_file_idx   : 25959 (SourceFile)
+138852	
+138853	Class #487            -
