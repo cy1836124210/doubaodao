@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>豆包回复</title>
+<style>
+  :root{--bg:#14161a;--card:#1e2126;--line:#2c3038;--txt:#e8eaf0;
+        --dim:#9aa0ab;--accent:#4d7cfe;--ok:#3fce8a;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:15px/1.7 -apple-system,
+       "PingFang SC","Microsoft YaHei",sans-serif;padding:14px}
+  .sys{color:var(--dim);font-size:12px;text-align:center;margin:6px 0}
+  .msg{margin:10px 0}
+  .think{background:var(--card);border:1px solid var(--line);border-radius:10px;
+         padding:8px 12px;color:var(--dim);font-size:13px;margin-bottom:8px}
+  .think b{color:var(--accent);font-weight:500}
+  .bubble{background:var(--card);border:1px solid var(--line);
+          border-radius:14px;border-top-left-radius:4px;padding:12px 14px}
+  .bubble.streaming::after{content:"▍";color:var(--accent);
+          animation:blink .8s infinite}
+  @keyframes blink{50%{opacity:0}}
+  .done-tag{display:inline-block;font-size:11px;color:var(--ok);
+            border:1px solid var(--ok);border-radius:8px;padding:0 6px;
+            margin-top:8px}
+  pre{background:#0d0f12;border-radius:8px;padding:10px;overflow-x:auto;
+      font-size:13px;margin:8px 0}
+  code{font-family:Consolas,monospace}
+  h1,h2,h3{font-size:16px;margin:10px 0 6px}
+  ul,ol{padding-left:22px}
+  a{color:var(--accent)}
+  p{margin:6px 0}
+</style>
+</head>
+<body>
+<div id="feed"><div class="sys">等待豆包回复…</div></div>
+<script>
+const feed = document.getElementById('feed');
+const msgs = {};   // mid -> {bubble, think, text, done}
+
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')
+  .replace(/>/g,'&gt;');}
+function md(s){                    // 轻量 Markdown
+  s = esc(s);
+  s = s.replace(/```([\s\S]*?)```/g,(m,c)=>'<pre><code>'+c+'</code></pre>');
+  s = s.replace(/`([^`\n]+)`/g,'<code>$1</code>');
+  s = s.replace(/^### (.*)$/gm,'<h3>$1</h3>')
+       .replace(/^## (.*)$/gm,'<h2>$1</h2>')
+       .replace(/^# (.*)$/gm,'<h1>$1</h1>');
+  s = s.replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');
+  s = s.replace(/^\s*[-*] (.*)$/gm,'<li>$1</li>');
+  s = s.replace(/(<li>[\s\S]*?<\/li>)/g,'<ul>$1</ul>');
+  s = s.split(/\n{2,}/).map(p=>/^<h|<ul|<pre/.test(p.trim())?p:'<p>'+p+'</p>').join('');
+  return s.replace(/\n/g,'<br>');
+}
+function sys(t){
+  const d=document.createElement('div');d.className='sys';d.textContent=t;
+  feed.appendChild(d);feed.scrollTop=feed.scrollHeight=1e9;
+  window.scrollTo(0,1e9);
+}
+function entry(mid){
+  if(msgs[mid])return msgs[mid];
+  const w=document.createElement('div');w.className='msg';
+  const th=document.createElement('div');th.className='think';
+  th.style.display='none';
+  const b=document.createElement('div');b.className='bubble streaming';
+  w.appendChild(th);w.appendChild(b);feed.appendChild(w);
+  return msgs[mid]={box:w,bubble:b,think:th,text:''};
+}
+window.onBridgeMsg=function(s){
+  let o;try{o=JSON.parse(s)}catch(e){return}
+  const t=o.t;
+  if(t==='sys.log')return sys(o.text);
+  if(t==='plan.start')return sys('计划开始：'+(o.title||''));
+  if(t==='plan.progress')return sys('计划进度 '+o.done+'/'+o.total+' '+(o.name||''));
+  if(t==='plan.end')return sys('计划结束：'+(o.text||''));
+  if(t==='chat.start'){entry(o.mid);return sys('豆包开始回复');}
+  if(t==='chat.delta'){
+    const m=entry(o.mid);
+    if(o.kind==='text'){m.text+=o.text;m.bubble.innerHTML=md(m.text);}
+    else{m.think.style.display='block';
+         m.think.innerHTML='<b>·</b> '+esc(o.text||'');}
+    window.scrollTo(0,1e9);return;
+  }
+  if(t==='chat.async')return sys('已转为后台任务');
+  if(t==='send.result')
+    return sys(o.ok?'回复已发送':'发送失败：'+(o.err||'未知错误'));
+  if(t==='chat.end'||t==='chat.reply'){
+    const m=msgs[o.mid];if(!m)return;
+    if(t==='chat.reply'&&o.text){m.text=o.text;m.bubble.innerHTML=md(m.text);}
+    m.bubble.classList.remove('streaming');
+    const tag=document.createElement('span');tag.className='done-tag';
+    tag.textContent='已生成';m.box.appendChild(tag);
+    window.scrollTo(0,1e9);return;
+  }
+};
+</script>
+</body>
+</html>
